@@ -218,7 +218,7 @@ button, input, textarea, select { font: inherit; color: inherit; }
     intro: {
       title: "Let's get to know your business and where you want to take it.",
       lines: [
-        "About 20 minutes, one question at a time. This builds your strategy, so the more we know the better, but rough notes are perfect.",
+        "About 25 minutes, one question at a time. This builds your strategy, so the more we know the better, but rough notes are perfect.",
         "Not sure about something? Skip it. We'll cover it in your debrief.",
         "Prefer to talk? Record a voice memo answering the questions and email it to {email}."
       ],
@@ -258,12 +258,25 @@ button, input, textarea, select { font: inherit; color: inherit; }
                  ["hours", "Opening hours", "e.g. Mon to Sat, 7am to 7pm"]],
         extras: ["Other locations, or plans to open more"] },
 
-      { id: "g1", sec: "goals", type: "text",
+      { id: "g1", sec: "goals", type: "text", required: true,
         q: "What do you want your marketing to do for you over the next 3 to 12 months?",
         hint: "Be specific if you can: more of a certain service, fill quiet days, hire staff, launch something, open a second site.",
-        ph: "e.g. Fill our Tuesday and Wednesday afternoons, and get more people booking pregnancy massage.",
-        extras: ["What would make this a win in 3 months?",
-                 "How do you track how you're going now? (bookings, sales, enquiries, nothing yet)"] },
+        ph: "e.g. Fill our Tuesday and Wednesday afternoons, and get more people booking pregnancy massage." },
+      { id: "gw", sec: "goals", type: "fields",
+        q: "How will we know it's working?",
+        hint: "Rough numbers are perfect. Knowing where you're starting lets us show you what's moved.",
+        fields: [["win", "What a win looks like in 3 months", "e.g. 10 more bookings a week"],
+                 ["measure", "How you'll measure it", "e.g. Bookings in our system, enquiries, sales"],
+                 ["now", "Where that's at today", "e.g. About 40 bookings a week"]] },
+      { id: "gn", sec: "goals", type: "fields",
+        q: "What are your numbers right now?",
+        hint: "Rough is fine. These turn your strategy from a guess into a plan. Skip any you don't know.",
+        fields: [["leads", "Enquiries or bookings a month", "e.g. About 160 bookings"],
+                 ["room", "How many more customers you could take", "e.g. 15 more a week before we need staff"],
+                 ["best", "Your most profitable service or product", "e.g. 60 min remedial massage"],
+                 ["reviews", "Google rating and number of reviews", "e.g. 4.9 from 212 reviews"],
+                 ["followers", "Followers on your main account", "e.g. 1,800 on Instagram"],
+                 ["spend", "Monthly ad spend, if any", "e.g. $300 on Meta ads, or none"]] },
       { id: "g2", sec: "goals", type: "text",
         q: "What's the biggest thing holding your marketing back right now?",
         ph: "e.g. Time. We post in bursts, then disappear for a month.",
@@ -350,12 +363,11 @@ button, input, textarea, select { font: inherit; color: inherit; }
                ["often", "How often", "", "1.2fr", ["Daily", "A few times a week", "Weekly", "Monthly", "Rarely", "Not using it"]]],
         start: 3, add: "Add a channel",
         extras: ["Which posts or campaigns have worked best, and why do you think?",
-                 "Do you run ads? Roughly what do you spend a month, and where?",
                  "How often would you like to post?"] },
       { id: "mk2", sec: "marketing", type: "text",
         q: "Do you have a logo, colours, fonts or brand guidelines?",
-        hint: "A Google Drive link is perfect.",
-        ph: "e.g. Logo and colours, no guidelines. Drive link: ...",
+        hint: "You can share the files themselves at the end.",
+        ph: "e.g. Logo and colours, no guidelines.",
         extras: ["Anything about your current look you'd change?"] },
       { id: "mk3", sec: "marketing", type: "text",
         q: "Who could you team up with locally?",
@@ -413,7 +425,12 @@ button, input, textarea, select { font: inherit; color: inherit; }
         hint: "Pick two.",
         options: ["Funny", "Calm", "Premium", "Down-to-earth", "Nerdy", "Warm"],
         text: ["Anything off-limits?", "Topics, jokes or styles you'd rather we avoid"],
-        extras: ["Links to videos or brands you love, and why", "Anything you've tried before and didn't like"] }
+        extras: ["Links to videos or brands you love, and why", "Anything you've tried before and didn't like"] },
+      { id: "files", sec: "style", type: "fields",
+        q: "Got files to share?",
+        hint: "Put them in a shared folder and paste the link. Handy to have: your logo and brand files, photos of your space and team, past videos, and screenshots of your Instagram, TikTok or Google insights. Website or Google Analytics screenshots help too.",
+        fields: [["link", "Google Drive or Dropbox folder link", "e.g. https://drive.google.com/..."],
+                 ["notes", "What's in there", "e.g. Logo, 20 photos, last 3 months of insights"]] }
     ]
   };
   var SECTIONS = Object.assign({ intro: BRIEF.intro.side || "Your Brief", review: "Check & Send", done: "Thank You" }, BRIEF.sections);

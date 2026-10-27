@@ -218,7 +218,7 @@ button, input, textarea, select { font: inherit; color: inherit; }
     intro: {
       title: "Tell us what you need.",
       lines: [
-        "About 10 minutes, one question at a time. You'll only see the questions that matter for what you pick. Rough notes are perfect.",
+        "About 10 to 15 minutes, one question at a time. You'll only see the questions that matter for what you pick. Rough notes are perfect.",
         "Not sure about something? Skip it. We'll cover it on our call.",
         "Prefer to talk? Record a voice memo answering the questions and email it to {email}."
       ],
@@ -231,13 +231,14 @@ button, input, textarea, select { font: inherit; color: inherit; }
     sections: {
       need: "What You Need",
       business: "Your Business",
+      goals: "Your Goals",
       shoot: "Your Shoot",
       ai: "AI Training",
       web: "Your Website",
       other: "Something Else",
       wrap: "Budget & Timing"
     },
-    order: ["need", "business", "shoot", "ai", "web", "other", "wrap"],
+    order: ["need", "business", "goals", "shoot", "ai", "web", "other", "wrap"],
     steps: [
       { id: "need", sec: "need", type: "chips", multi: true, required: true,
         q: "What can we help with?",
@@ -253,6 +254,17 @@ button, input, textarea, select { font: inherit; color: inherit; }
         q: "What's going on that made you get in touch?",
         ph: "e.g. We're opening a second clinic in March and our website still looks like 2015.",
         extras: ["Have you worked with an agency or freelancer on this before? How did it go?"] },
+
+      { id: "g1", sec: "goals", type: "text", required: true,
+        q: "What do you want this to achieve?",
+        hint: "The result you're after, not just the thing you're buying. More enquiries, less admin, a site that books people in, videos that help you hire.",
+        ph: "e.g. Get more people booking online instead of calling, and save reception 5 hours a week." },
+      { id: "gw", sec: "goals", type: "fields",
+        q: "How will we know it's working?",
+        hint: "Rough numbers are perfect. Knowing where you're starting lets us show you what's moved.",
+        fields: [["win", "What a win looks like in 3 months", "e.g. 30 online bookings a week"],
+                 ["measure", "How you'll measure it", "e.g. Website enquiries, hours saved, applications"],
+                 ["now", "Where that's at today", "e.g. 5 online bookings a week"]] },
 
       { id: "sh1", sec: "shoot", type: "chips", multi: true,
         when: { step: "need", any: ["Bespoke shoot"] },
@@ -316,11 +328,13 @@ button, input, textarea, select { font: inherit; color: inherit; }
         fields: [["size", "How many people", "e.g. 6"],
                  ["roles", "What they do", "e.g. Reception, two managers, admin"],
                  ["level", "How much they use AI now", "e.g. One person uses ChatGPT, the rest never have"]] },
-      { id: "ai2", sec: "ai", type: "text",
+      { id: "ai2", sec: "ai", type: "fields",
         when: { step: "need", any: ["AI training"] },
         q: "Which jobs eat up your team's time?",
-        ph: "e.g. Replying to emails, writing rosters, quotes, social captions.",
-        extras: ["What would you do with an extra 5 hours a week?"] },
+        fields: [["jobs", "The jobs", "e.g. Replying to emails, rosters, quotes, social captions"],
+                 ["hours", "Rough hours a week on them, all up", "e.g. 12 hours across the team"],
+                 ["tried", "Anything you've tried already", "e.g. ChatGPT for emails, but nobody trusts it"]],
+        extras: ["What would your team do with that time back?"] },
       { id: "ai3", sec: "ai", type: "text",
         when: { step: "need", any: ["AI training"] },
         q: "What software does your team use every day?",
@@ -338,7 +352,10 @@ button, input, textarea, select { font: inherit; color: inherit; }
         q: "Tell us about your current website.",
         fields: [["url", "Current website", "e.g. myomassage.com.au, or none yet"],
                  ["platform", "What it's built on, if you know", "e.g. Wix, Squarespace, WordPress"],
-                 ["who", "Who looks after it now", "e.g. Me, or a mate who built it in 2019"]] },
+                 ["who", "Who looks after it now", "e.g. Me, or a mate who built it in 2019"],
+                 ["visits", "Visitors a month, if you know", "e.g. About 800, or not sure"],
+                 ["logins", "Do you have the logins for your domain and hosting?", "e.g. Yes for the domain, not sure about hosting"],
+                 ["google", "Google Business Profile", "e.g. Yes, 4.8 from 90 reviews"]] },
       { id: "w2", sec: "web", type: "text",
         when: { step: "need", any: ["Website"] },
         q: "What's not working about it?",
@@ -378,7 +395,12 @@ button, input, textarea, select { font: inherit; color: inherit; }
       { id: "x2", sec: "wrap", type: "chips",
         q: "Are you an ASAP Agency member?",
         hint: "Members get member pricing on Personalised work.",
-        options: ["Yes", "No", "Not yet, but interested"] }
+        options: ["Yes", "No", "Not yet, but interested"] },
+      { id: "files", sec: "wrap", type: "fields",
+        q: "Got files to share?",
+        hint: "Put them in a shared folder and paste the link. Handy to have: your logo and brand files, photos, past videos, website or Google Analytics screenshots, and examples of what you want.",
+        fields: [["link", "Google Drive or Dropbox folder link", "e.g. https://drive.google.com/..."],
+                 ["notes", "What's in there", "e.g. Logo, 20 photos, last 3 months of insights"]] }
     ]
   };
   var SECTIONS = Object.assign({ intro: BRIEF.intro.side || "Your Brief", review: "Check & Send", done: "Thank You" }, BRIEF.sections);

@@ -220,7 +220,7 @@ button, input, textarea, select { font: inherit; color: inherit; }
       side: "Your Brief",
       title: "Let's get to know you and your channel.",
       lines: [
-        "About 10 minutes, one question at a time. Answer like you're chatting to us over a coffee. Rough notes are perfect.",
+        "About 15 minutes, one question at a time. Answer like you're chatting to us over a coffee. Rough notes are perfect.",
         "Not sure about something? Skip it. We'll cover it on our call.",
         "Prefer to talk? Record a voice memo answering the questions and email it to {email}."
       ],
@@ -259,12 +259,17 @@ button, input, textarea, select { font: inherit; color: inherit; }
         start: 2, add: "Add a platform",
         extras: ["Average views on a normal post vs your best post"] },
 
-      { id: "g1", sec: "goals", type: "text",
+      { id: "g1", sec: "goals", type: "text", required: true,
         q: "What does growth look like for you?",
         hint: "More followers, brand deals, selling your own product, quitting your day job? Be honest. It shapes every concept.",
         ph: "e.g. Get to 20k on TikTok and land my first paid brand deal.",
-        extras: ["Where would you like to be in 6 months? Any numbers in mind?",
-                 "Do you make money from your content now? How? (brand deals, affiliate, products, UGC, subscriptions)"] },
+        extras: ["Do you make money from your content now? How? (brand deals, affiliate, products, UGC, subscriptions)"] },
+      { id: "gw", sec: "goals", type: "fields",
+        q: "How will we know it's working?",
+        hint: "Rough numbers are perfect. Knowing where you're starting lets us show you what's moved.",
+        fields: [["win", "What a win looks like in 3 months", "e.g. 20k on TikTok and one paid brand deal"],
+                 ["measure", "How you'll measure it", "e.g. Followers, views, deals, sales"],
+                 ["now", "Where that's at today", "e.g. 4,200 followers, no deals yet"]] },
       { id: "g2", sec: "goals", type: "rows",
         q: "Anything you sell or promote?",
         hint: "Your own products, affiliate codes, brand partners. Real prices and codes only. We never make one up. Nothing yet? Just skip.",
@@ -279,6 +284,13 @@ button, input, textarea, select { font: inherit; color: inherit; }
         ph: "e.g. Mostly women 18 to 30, students and young renters, mainly in Australia.",
         extras: ["What do people comment or DM you about most?",
                  "What do you want people to feel or do after watching?"] },
+      { id: "a3", sec: "audience", type: "fields",
+        q: "What do your insights say?",
+        hint: "From the insights or analytics tab on your main platform. Rough is fine, and you can share screenshots at the end.",
+        fields: [["age", "Main age range", "e.g. 18 to 24"],
+                 ["split", "Gender split", "e.g. 70% women"],
+                 ["where", "Top cities or countries", "e.g. Melbourne, Sydney, London"],
+                 ["watch", "Average watch time on a normal post", "e.g. 6 seconds, or not sure"]] },
       { id: "a2", sec: "audience", type: "text",
         q: "Paste 2 or 3 comments or DMs from your audience that made your day.",
         hint: "Word for word is best.",
@@ -364,7 +376,12 @@ button, input, textarea, select { font: inherit; color: inherit; }
         q: "Anything we need to work around?",
         hint: "Pick any that apply. Not sure is a perfectly good answer.",
         options: ["Current brand deals", "Exclusive partner", "Health or fitness claims", "Finance", "Alcohol", "None", "Not sure"],
-        text: ["Tell us more", "Brands you can't mention, how you disclose ads, topics you never touch"] }
+        text: ["Tell us more", "Brands you can't mention, how you disclose ads, topics you never touch"] },
+      { id: "files", sec: "rules", type: "fields",
+        q: "Got files to share?",
+        hint: "Put them in a shared folder and paste the link. Most useful: screenshots of your insights (audience, top posts, watch time), plus any brand kit, media kit or past videos you love.",
+        fields: [["link", "Google Drive or Dropbox folder link", "e.g. https://drive.google.com/..."],
+                 ["notes", "What's in there", "e.g. Logo, 20 photos, last 3 months of insights"]] }
     ]
   };
   var SECTIONS = Object.assign({ intro: BRIEF.intro.side || "Your Brief", review: "Check & Send", done: "Thank You" }, BRIEF.sections);

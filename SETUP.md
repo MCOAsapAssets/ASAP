@@ -63,7 +63,7 @@ Add a line to the privacy policy's "tools we use": *Google Sheets, for storing t
 The questions live in `src/briefs/` (one file per brief). Edit the wording there, then run `node build.js`. That rebuilds the online briefs and the Word versions together, so they always match. The shared look and behaviour are in `src/template-head.html` and `src/engine.js`.
 
 - **Optional follow-ups** ("Got more to say?") are the `extras` list on each question.
-- **`required: true`** means the client can't skip that question. It's used for filming schedules on every brief, and for posting frequency on Creators.
+- **`required: true`** means the client can't skip that question. It's used for the main goal and the filming schedule on every brief, and for posting frequency on Creators.
 - **`when`** shows a question only for certain picks. For example, the videographer question only shows for Custom Retainer clients.
 
 If you change `apps-script/Code.gs`, paste it into the Apps Script editor again. Then go to **Deploy → Manage deployments → ✏️ → Version: New version → Deploy**. The URL stays the same.

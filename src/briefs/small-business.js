@@ -11,7 +11,7 @@ var BRIEF = {
   intro: {
     title: "Let's get to know your business.",
     lines: [
-      "About 10 minutes, one question at a time. Answer like you're chatting to us over a coffee. Rough notes are perfect.",
+      "About 15 minutes, one question at a time. Answer like you're chatting to us over a coffee. Rough notes are perfect.",
       "Not sure about something? Skip it. We'll cover it on our call.",
       "Prefer to talk? Record a voice memo answering the questions and email it to {email}."
     ],
@@ -21,6 +21,7 @@ var BRIEF = {
   },
   sections: {
     business: "Your Business",
+    goals: "Your Goals",
     prices: "Your Prices",
     people: "Your People",
     customers: "Your Customers",
@@ -28,7 +29,7 @@ var BRIEF = {
     rules: "The Rules",
     style: "Filming & Style"
   },
-  order: ["business", "prices", "people", "customers", "different", "rules", "style"],
+  order: ["business", "goals", "prices", "people", "customers", "different", "rules", "style"],
   steps: [
     { id: "b1", sec: "business", type: "text",
       q: "What does your business do, in one sentence?",
@@ -42,6 +43,22 @@ var BRIEF = {
       fields: [["suburb", "Suburb", "e.g. Mentone"],
                ["book", "How people book or buy", "Website link, phone, walk in"],
                ["hours", "Opening hours", "e.g. Mon to Sat, 7am to 7pm"]] },
+
+    { id: "g1", sec: "goals", type: "text", required: true,
+      q: "What do you want your videos to do for your business over the next 3 months?",
+      hint: "More of a certain booking, fill quiet days, launch something, get known locally. Every concept gets built to move this.",
+      ph: "e.g. Fill our Tuesday and Wednesday afternoons, and get more people booking pregnancy massage." },
+    { id: "gw", sec: "goals", type: "fields",
+      q: "How will we know it's working?",
+      hint: "Rough numbers are perfect. Knowing where you're starting lets us show you what's moved.",
+      fields: [["win", "What a win looks like in 3 months", "e.g. 10 more bookings a week"],
+               ["measure", "How you'll measure it", "e.g. Bookings in our system, enquiries, sales"],
+               ["now", "Where that's at today", "e.g. About 40 bookings a week"]] },
+    { id: "g3", sec: "goals", type: "text",
+      q: "When are your busy and quiet times of year?",
+      hint: "We'll time your concepts around them.",
+      ph: "e.g. January is dead. June to August is flat out with winter sport injuries.",
+      extras: ["Launches, events, anniversaries or big dates coming up"] },
 
     { id: "p1", sec: "prices", type: "rows",
       q: "What do you sell, and what does it cost?",
@@ -147,11 +164,20 @@ var BRIEF = {
                ["who", "Who'll do the filming", "e.g. Me on my phone, or our receptionist"]],
       extras: ["Busy periods coming up when filming won't happen? (holidays, peak season, launches)",
                "How often do you post now, and how often would you like to?"] },
+    { id: "s5", sec: "style", type: "text",
+      q: "What have you posted before that worked, or flopped?",
+      hint: "Links are perfect. Never really posted? Just skip.",
+      ph: "e.g. A video of Kim fixing a footy player's shoulder got 10k views. Our deal posts get nothing." },
     { id: "s2", sec: "style", type: "chips", multi: true, max: 2,
       q: "How do you want to come across?",
       hint: "Pick two.",
       options: ["Funny", "Calm", "Premium", "Down-to-earth", "Nerdy", "Warm"],
       text: ["Anything off-limits?", "Topics, jokes or styles you'd rather we avoid"],
-      extras: ["Links to videos you love, from any business, and why", "Anything you've tried before and didn't like"] }
+      extras: ["Links to videos you love, from any business, and why", "Anything you've tried before and didn't like"] },
+    { id: "files", sec: "style", type: "fields",
+      q: "Got files to share?",
+      hint: "Put them in a shared folder and paste the link. Handy to have: your logo and brand files, photos of your space and team, past videos, and screenshots of your Instagram, TikTok or Google insights.",
+      fields: [["link", "Google Drive or Dropbox folder link", "e.g. https://drive.google.com/..."],
+               ["notes", "What's in there", "e.g. Logo, 20 photos, last 3 months of insights"]] }
   ]
 };
