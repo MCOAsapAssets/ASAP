@@ -1,0 +1,790 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>ASAP Creator Brief</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@700;800&family=Roboto+Mono:wght@400;500&family=Roboto+Condensed:ital,wght@1,300;1,400&display=swap">
+<style>
+/* Layout: a fixed black panel with a soft monochrome cube on the left, a quiet white page on the right asking one question at a time. Single committed look (ink + paper), like the ASAP deck. */
+:root {
+  --ink: #0b0b0b;
+  --ink-2: #1a1a1a;
+  --paper: #ffffff;
+  --text: #111111;
+  --muted: #6f6f6f;
+  --line: #d9d9d9;
+  --line-strong: #111111;
+  --wash: #f4f4f4;
+  --display: "Schibsted Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --mono: "Roboto Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --logo: "Roboto Condensed", "Arial Narrow", Arial, sans-serif;
+  color-scheme: light;
+}
+html, body { height: 100%; }
+html, body { margin: 0; }
+body { background: var(--paper); color: var(--text); font-family: var(--mono); font-size: 15px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+* { box-sizing: border-box; }
+button, input, textarea, select { font: inherit; color: inherit; }
+::selection { background: var(--ink); color: var(--paper); }
+
+.app { display: grid; grid-template-columns: minmax(300px, 35%) minmax(0, 1fr); height: 100%; }
+
+/* ---------- left panel ---------- */
+.side { position: relative; background: var(--ink); color: var(--paper); overflow: hidden; }
+.scene { position: absolute; inset: 0; perspective: 1100px; filter: blur(2.4px) brightness(0.92); }
+.cube { --s: clamp(220px, 30vw, 520px); position: absolute; width: var(--s); height: var(--s); left: 18%; top: 50%; margin-top: calc(var(--s) / -2); transform-style: preserve-3d; transform: rotateX(-24deg) rotateY(-36deg) rotateZ(4deg); animation: drift 26s ease-in-out infinite alternate; }
+@keyframes drift { from { transform: rotateX(-24deg) rotateY(-42deg) rotateZ(4deg); } to { transform: rotateX(-20deg) rotateY(-28deg) rotateZ(2deg); } }
+.face { position: absolute; inset: 0; display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr); gap: 4.5%; padding: 3.5%; background: #050505; backface-visibility: hidden; }
+.face::after { content: ""; position: absolute; inset: 0; background: rgba(0,0,0,var(--shade, 0)); pointer-events: none; }
+.face span { border-radius: 9%; background: var(--c); box-shadow: inset 0 0 18px rgba(255,255,255,0.06), inset 0 -10px 22px rgba(0,0,0,0.35); }
+.f-front { transform: translateZ(calc(var(--s) / 2)); --shade: .18; }
+.f-back { transform: rotateY(180deg) translateZ(calc(var(--s) / 2)); --shade: .5; }
+.f-right { transform: rotateY(90deg) translateZ(calc(var(--s) / 2)); --shade: .45; }
+.f-left { transform: rotateY(-90deg) translateZ(calc(var(--s) / 2)); --shade: .5; }
+.f-top { transform: rotateX(90deg) translateZ(calc(var(--s) / 2)); --shade: 0; }
+.f-bottom { transform: rotateX(-90deg) translateZ(calc(var(--s) / 2)); --shade: .7; }
+.vignette { position: absolute; inset: 0; background: radial-gradient(120% 90% at 40% 45%, transparent 30%, rgba(0,0,0,.82) 100%), linear-gradient(to bottom, rgba(0,0,0,.35), transparent 25%, transparent 70%, rgba(0,0,0,.6)); pointer-events: none; }
+.grain { position: absolute; inset: -50%; opacity: .16; pointer-events: none; mix-blend-mode: screen; background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>"); }
+
+.side-inner { position: relative; z-index: 2; height: 100%; display: flex; flex-direction: column; justify-content: space-between; padding-block: 28px 32px; padding-left: max(28px, env(safe-area-inset-left, 0px)); padding-right: 28px; }
+.side-top { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.62); display: flex; justify-content: space-between; gap: 12px; }
+.side-title { font-family: var(--display); font-weight: 800; font-size: clamp(34px, 3.6vw, 60px); line-height: .98; letter-spacing: -0.045em; text-wrap: balance; margin: 0; padding-left: 12%; text-shadow: 0 2px 30px rgba(0,0,0,.6); }
+.logo { align-self: center; display: flex; gap: 0; }
+.logo i { display: grid; place-items: center; width: 40px; height: 40px; border: 1.3px solid rgba(255,255,255,.9); margin-left: -1.3px; transform: skewX(-18deg); font-family: var(--logo); font-style: italic; font-weight: 300; font-size: 26px; line-height: 1; }
+.logo i b { font-weight: 300; transform: skewX(18deg) translateX(-1px); display: block; }
+
+/* ---------- right panel ---------- */
+.main { position: relative; overflow-y: auto; display: flex; flex-direction: column; min-width: 0; }
+.topbar { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding-block: 24px 0; padding-left: clamp(24px, 6vw, 96px); padding-right: max(24px, env(safe-area-inset-right, 0px)); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.topbar .right { display: flex; align-items: center; gap: 18px; }
+.counter { font-variant-numeric: tabular-nums; color: var(--text); }
+.linkbtn { background: none; border: 0; padding: 0; cursor: pointer; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--text); border-bottom: 1px solid currentColor; }
+.linkbtn:focus-visible, .btn:focus-visible, .chip:focus-visible, .more:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+
+.stage { flex: 1; display: flex; align-items: center; padding-block: 40px 24px; padding-left: clamp(24px, 6vw, 96px); padding-right: max(24px, env(safe-area-inset-right, 0px)); }
+.card { width: 100%; max-width: 640px; display: flex; flex-direction: column; gap: 26px; }
+.card.enter { animation: rise .45s cubic-bezier(.2,.7,.2,1) both; }
+@keyframes rise { from { opacity: .001; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+.eyebrow { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0; }
+.q { font-family: var(--mono); font-weight: 500; font-size: clamp(19px, 1.7vw, 24px); line-height: 1.4; letter-spacing: -0.01em; margin: 0; text-wrap: balance; max-width: 30em; }
+.hint { color: var(--muted); font-size: 13.5px; margin: -14px 0 0; max-width: 54ch; }
+.copy p { margin: 0 0 12px; max-width: 56ch; }
+.copy p:last-child { margin-bottom: 0; }
+.email { user-select: all; color: var(--text); border-bottom: 1px solid var(--line-strong); }
+
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field label { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.input, .area { width: 100%; border: 0; border-bottom: 1px solid var(--line); background: transparent; padding: 8px 0 10px; font-family: var(--mono); font-size: 16px; line-height: 1.6; border-radius: 0; outline: none; transition: border-color .2s; }
+.area { resize: none; min-height: 3.4em; overflow: hidden; }
+.input:focus, .area:focus { border-bottom-color: var(--line-strong); }
+.input::placeholder, .area::placeholder { color: #b3b3b3; }
+.fields { display: grid; gap: 22px; }
+
+.rows { display: grid; gap: 4px; }
+.row { display: grid; gap: 14px; align-items: end; }
+.row.head { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.row select { border: 0; border-bottom: 1px solid var(--line); background: transparent; padding: 8px 0 10px; font-size: 14px; border-radius: 0; outline: none; width: 100%; min-width: 0; }
+.row select:focus { border-bottom-color: var(--line-strong); }
+.row .input { font-size: 15px; min-width: 0; }
+.rm { background: none; border: 0; color: var(--muted); cursor: pointer; padding: 8px 2px 10px; font-size: 16px; line-height: 1; }
+.rm:hover { color: var(--text); }
+.addrow { justify-self: start; margin-top: 10px; }
+
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { border: 1px solid var(--line-strong); background: var(--paper); padding: 9px 14px; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; cursor: pointer; border-radius: 0; transition: background .15s, color .15s; }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.chip:hover { background: var(--wash); }
+.chip[aria-pressed="true"]:hover { background: var(--ink-2); }
+
+.more { align-self: flex-start; background: none; border: 0; padding: 0; cursor: pointer; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); display: inline-flex; gap: 10px; align-items: center; }
+.more:hover { color: var(--text); }
+.more .plus { display: inline-grid; place-items: center; width: 18px; height: 18px; border: 1px solid currentColor; font-size: 13px; line-height: 1; }
+.extras { display: grid; gap: 20px; padding: 22px 0 4px; border-top: 1px dashed var(--line); }
+.extras .tag { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin: 0 0 -6px; }
+
+.nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 10px; }
+.btn { background: var(--ink); color: var(--paper); border: 1px solid var(--ink); padding: 15px 26px; font-size: 12px; letter-spacing: .16em; text-transform: uppercase; cursor: pointer; border-radius: 0; display: inline-flex; gap: 14px; align-items: center; transition: transform .15s, background .15s; }
+.btn:hover { background: #2a2a2a; }
+.btn:active { transform: translateY(1px); }
+.btn.ghost { background: var(--paper); color: var(--text); }
+.btn.ghost:hover { background: var(--wash); }
+.btn[disabled] { opacity: .35; cursor: not-allowed; }
+.kbd { font-size: 11px; color: var(--muted); letter-spacing: .06em; }
+.back { background: none; border: 0; cursor: pointer; padding: 6px 0; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.back:hover { color: var(--text); }
+.err { color: #9b1c1c; font-size: 13px; margin: -10px 0 0; }
+.must { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--text); margin: -14px 0 0; }
+
+.progress { height: 2px; background: var(--wash); margin: 0; }
+.progress i { display: block; height: 100%; background: var(--ink); width: 0; transition: width .4s ease; }
+
+/* review */
+.review { display: grid; gap: 28px; }
+.rsec h3 { font-family: var(--display); font-weight: 800; letter-spacing: -0.03em; font-size: 20px; margin: 0 0 8px; }
+.ritem { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 16px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.ritem .rq { font-size: 12px; color: var(--muted); }
+.ritem .ra { grid-column: 1; white-space: pre-wrap; overflow-wrap: anywhere; font-size: 14px; }
+.ritem .ra.empty { color: #b3b3b3; }
+.ritem .linkbtn { grid-column: 2; grid-row: 1 / span 2; align-self: start; }
+
+.note { background: var(--wash); padding: 16px 18px; font-size: 13.5px; }
+.note p { margin: 0 0 8px; } .note p:last-child { margin: 0; }
+
+/* owner drawer */
+.drawer { position: fixed; inset: 0; z-index: 30; display: grid; grid-template-columns: 1fr minmax(0, 520px); }
+.drawer .dim { background: rgba(0,0,0,.45); }
+.drawer .panel { background: var(--paper); overflow-y: auto; padding-block: max(28px, env(safe-area-inset-top, 0px)) 28px; padding-left: 28px; padding-right: max(28px, env(safe-area-inset-right, 0px)); display: flex; flex-direction: column; gap: 20px; }
+.drawer h2 { font-family: var(--display); font-weight: 800; letter-spacing: -0.04em; font-size: 30px; margin: 0; }
+.resp { border-top: 1px solid var(--line-strong); padding-top: 14px; display: grid; gap: 4px; }
+.resp .biz { font-weight: 500; font-size: 15px; }
+.resp .meta { font-size: 12px; color: var(--muted); }
+.resp .acts { display: flex; gap: 18px; margin-top: 8px; }
+.resp pre { white-space: pre-wrap; font-family: var(--mono); font-size: 12.5px; background: var(--wash); padding: 14px; margin: 8px 0 0; max-height: 50vh; overflow: auto; }
+.toast { position: fixed; left: 50%; bottom: max(24px, env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: var(--ink); color: var(--paper); padding: 10px 16px; font-size: 12px; letter-spacing: .08em; z-index: 40; }
+
+/* phone */
+@media (max-width: 760px) {
+  .app { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto 1fr; height: auto; min-height: 100%; }
+  .side { height: 190px; }
+  .cube { --s: 230px; left: auto; right: -40px; }
+  .side-inner { padding-block: 18px 18px; padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-left: max(16px, env(safe-area-inset-left, 0px)); }
+  .side-title { font-size: 34px; padding-left: 0; }
+  .logo { align-self: flex-start; }
+  .logo i { width: 26px; height: 26px; font-size: 17px; }
+  .main { overflow: visible; }
+  .topbar, .stage { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  .stage { align-items: flex-start; padding-block: 28px 40px; }
+  .kbd { display: none; }
+  .row { grid-template-columns: minmax(0, 1fr) !important; gap: 2px; padding-bottom: 14px; border-bottom: 1px dashed var(--line); }
+  .row.head { display: none; }
+  .row .rm { justify-self: end; }
+  .drawer { grid-template-columns: minmax(0, 1fr); }
+  .drawer .dim { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cube { animation: none; }
+  .card.enter { animation: none; }
+  .progress i { transition: none; }
+}
+</style>
+</head>
+<body>
+
+<div class="app">
+  <aside class="side" aria-hidden="true">
+    <div class="scene"><div class="cube" id="cube"></div></div>
+    <div class="grain"></div>
+    <div class="vignette"></div>
+    <div class="side-inner">
+      <div class="side-top"><span>Creator Brief</span><span id="secNo"></span></div>
+      <h1 class="side-title" id="secTitle">Your Brief</h1>
+      <div class="logo"><i><b>A</b></i><i><b>S</b></i><i><b>A</b></i><i><b>P</b></i></div>
+    </div>
+  </aside>
+
+  <main class="main" id="main">
+    <div class="progress"><i id="bar"></i></div>
+    <div class="topbar">
+      <span>ASAP Assets</span>
+      <div class="right">
+        <span class="counter" id="counter"></span>
+      </div>
+    </div>
+    <div class="stage"><div class="card" id="card"></div></div>
+  </main>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ---------- the brief ---------- */
+  // Briefs with a shoot-day version (Small Business): send clients the normal link if they film themselves.
+  // Add #shoot to the end of the link for clients with an ASAP shoot day, e.g. asapassets.com.au/brief#shoot
+  var SHOOT = /^#?shoot$/i.test(location.hash || "");
+  // Creators brief: Sustainable Growth (creator edits) and Accelerated Growth (ASAP edits).
+  // Posting frequency and filming schedule are required: the monthly plan is built around them.
+  var FREQ = ["Not posting", "Less than weekly", "1 to 2 a week", "3 to 4 a week", "5 to 6 a week", "Daily", "More than daily"];
+  var BRIEF = {
+    form: "Creator Brief",
+    key: "asap-brief-creators-v1",
+    file: "creators",
+    name: "Creator",
+    title: "ASAP Creator Brief",
+    label: "Creator Brief",
+    intro: {
+      side: "Your Brief",
+      title: "Let's get to know you and your channel.",
+      lines: [
+        "About 10 minutes, one question at a time. Answer like you're chatting to us over a coffee. Rough notes are perfect.",
+        "Not sure about something? Skip it. We'll cover it on our call.",
+        "Prefer to talk? Record a voice memo answering the questions and email it to {email}."
+      ],
+      fields: [["name", "Your name", "e.g. Kim", "given-name"],
+               ["biz", "Creator name or main handle", "e.g. @kimcooks", "nickname"],
+               ["contact", "Best email or phone", "So we can follow up", "email"]]
+    },
+    sections: {
+      you: "You & Your Channel",
+      goals: "Your Goals",
+      audience: "Your Audience",
+      content: "Your Content",
+      posting: "Posting",
+      filming: "Filming",
+      style: "Style & Editing",
+      rules: "The Rules"
+    },
+    order: ["you", "goals", "audience", "content", "posting", "filming", "style", "rules"],
+    steps: [
+      { id: "cp", sec: "you", type: "chips",
+        q: "Which plan are you on?",
+        hint: "This just tells us which questions matter for you.",
+        options: ["Sustainable Growth (I edit)", "Accelerated Growth (ASAP edits)", "Not sure yet"] },
+      { id: "y1", sec: "you", type: "text",
+        q: "What's your channel about, in one sentence?",
+        hint: "Your niche, like you'd explain it to someone at a party.",
+        ph: "e.g. Easy, cheap meals for uni students who can't cook.",
+        extras: ["How did you get started? The real story.",
+                 "What do you do outside of creating? Job, study, hobbies, the stuff that makes you you."] },
+      { id: "y2", sec: "you", type: "rows",
+        q: "Where do you post, and how big is each account?",
+        hint: "One line per platform. Rough numbers are fine.",
+        cols: [["plat", "Platform", "e.g. TikTok", "1.2fr"],
+               ["handle", "Handle", "e.g. @kimcooks", "1.4fr"],
+               ["size", "Followers", "e.g. 4,200", "1fr"]],
+        start: 2, add: "Add a platform",
+        extras: ["Average views on a normal post vs your best post"] },
+
+      { id: "g1", sec: "goals", type: "text",
+        q: "What does growth look like for you?",
+        hint: "More followers, brand deals, selling your own product, quitting your day job? Be honest. It shapes every concept.",
+        ph: "e.g. Get to 20k on TikTok and land my first paid brand deal.",
+        extras: ["Where would you like to be in 6 months? Any numbers in mind?",
+                 "Do you make money from your content now? How? (brand deals, affiliate, products, UGC, subscriptions)"] },
+
+      { id: "a1", sec: "audience", type: "text",
+        q: "Who watches your stuff?",
+        hint: "Your insights tab helps here. A gut feel is fine too.",
+        ph: "e.g. Mostly women 18 to 30, students and young renters, mainly in Australia.",
+        extras: ["What do people comment or DM you about most?",
+                 "What do you want people to feel or do after watching?"] },
+      { id: "a2", sec: "audience", type: "text",
+        q: "Paste 2 or 3 comments or DMs from your audience that made your day.",
+        hint: "Word for word is best.",
+        ph: "Paste here" },
+
+      { id: "c1", sec: "content", type: "text",
+        q: "Which of your posts have done best, and why do you think?",
+        hint: "Links are perfect.",
+        ph: "e.g. My $10 week of dinners video. People saved it like crazy.",
+        extras: ["Any posts that flopped that you thought would do well?"] },
+      { id: "c2", sec: "content", type: "text",
+        q: "Which creators do you love, and what do you love about them?",
+        hint: "In your niche or outside it.",
+        ph: "e.g. @nickdigiovanni for the energy, @alexfrenchguycooking for the story.",
+        extras: ["Formats or trends you never want to do"] },
+      { id: "c3", sec: "content", type: "text",
+        q: "What's a take in your niche you'd happily argue about?",
+        ph: "e.g. You don't need to meal prep on Sundays to eat well.",
+        extras: ["A myth in your niche you'd love to clear up"] },
+
+      { id: "po1", sec: "posting", type: "rows", required: true,
+        q: "How often do you want to post?",
+        hint: "For each platform, how often you post now and how often you'd like to. Your monthly plan is built around this.",
+        cols: [["plat", "Platform", "e.g. TikTok", "1.2fr"],
+               ["now", "Now", "", "1.3fr", FREQ, "Now:"],
+               ["goal", "Goal", "", "1.3fr", FREQ, "Goal:"]],
+        start: 2, add: "Add a platform" },
+      { id: "po2", sec: "posting", type: "text",
+        q: "When do you usually post, and what gets the most views?",
+        hint: "Days and times, if you know them.",
+        ph: "e.g. Weeknights around 7pm. Sunday mornings flop.",
+        extras: ["What usually makes you stop posting when life gets busy?"] },
+
+      { id: "f1", sec: "filming", type: "fields", required: true,
+        q: "What does your filming schedule look like?",
+        hint: "Be realistic. We'll group your concepts so each session gets the most out of your time.",
+        fields: [["when", "Days and times you can film", "e.g. Sunday afternoons, Wednesday nights"],
+                 ["often", "How often you can film", "e.g. One big batch day a week"],
+                 ["long", "How long each session can be", "e.g. 2 to 3 hours"]],
+        extras: ["Any time away coming up? (travel, exams, busy work periods)"] },
+      { id: "f2", sec: "filming", type: "text",
+        q: "Where can you film?",
+        hint: "List every spot, inside and out. We'll build your concepts around these, so the more the better.",
+        ph: "e.g. My kitchen, the share-house lounge, my car, the local market, the beach",
+        extras: ["What do you film on? (phone model, mic, lights, tripod)"] },
+      { id: "f3", sec: "filming", type: "text",
+        q: "Is anyone else ever in your videos?",
+        hint: "Partner, friends, housemates, pets. Say how they feel about being on camera.",
+        ph: "e.g. My housemate Jess, happy to be in the background. My dog, always." },
+
+      { id: "e1", sec: "style", type: "chips", multi: true, max: 2,
+        q: "How do you want to come across?",
+        hint: "Pick two.",
+        options: ["Funny", "Calm", "Premium", "Down-to-earth", "Nerdy", "Warm", "Bold", "Chaotic"],
+        text: ["Anything off-limits?", "Topics, jokes or styles you'd rather we avoid"],
+        extras: ["Links to videos you love, and why"] },
+      { id: "e2", sec: "style", type: "text",
+        when: { step: "cp", any: ["Accelerated Growth (ASAP edits)", "Not sure yet"] },
+        q: "How do you like your videos edited?",
+        hint: "Captions, music, pace, colour. Links to edits you love are perfect.",
+        ph: "e.g. Fast cuts, big white captions, trending audio under my voice.",
+        extras: ["Your fonts, colours or presets"] },
+      { id: "e3", sec: "style", type: "text",
+        when: { step: "cp", any: ["Sustainable Growth (I edit)", "Not sure yet"] },
+        q: "What do you edit on, and how confident are you?",
+        ph: "e.g. CapCut on my phone. Fine with cuts, slow with captions." },
+
+      { id: "r1", sec: "rules", type: "chips", multi: true,
+        q: "Anything we need to work around?",
+        hint: "Pick any that apply. Not sure is a perfectly good answer.",
+        options: ["Current brand deals", "Exclusive partner", "Health or fitness claims", "Finance", "Alcohol", "None", "Not sure"],
+        text: ["Tell us more", "Brands you can't mention, how you disclose ads, topics you never touch"] }
+    ]
+  };
+  var SECTIONS = Object.assign({ intro: BRIEF.intro.side || "Your Brief", review: "Check & Send", done: "Thank You" }, BRIEF.sections);
+  var SECTION_ORDER = BRIEF.order;
+  var STEPS = [{ id: "intro", sec: "intro", type: "intro" }]
+    .concat(BRIEF.steps)
+    .concat([{ id: "review", sec: "review", type: "review" }, { id: "done", sec: "done", type: "done" }]);
+  var META = BRIEF.meta || [];
+  var EMAIL = "agency@asapassets.com.au";
+
+  /* ---------- state ---------- */
+  var KEY = BRIEF.key;
+  var state = { step: 0, a: {}, open: {}, submitted: null };
+  try { var saved = JSON.parse(localStorage.getItem(KEY) || "null"); if (saved && saved.a) state = Object.assign(state, saved); } catch (e) {}
+  if (state.step >= STEPS.length || STEPS[state.step].type === "done") state.step = state.submitted ? STEPS.length - 1 : 0;
+  var saveT;
+  function save() { clearTimeout(saveT); saveT = setTimeout(function () { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} }, 250); }
+
+  /* ---------- settings ----------
+     SCRIPT_URL: paste the Google Apps Script "Web app URL" between the quotes.
+     FORM_NAME: becomes the tab name in the ASAP Client Briefs sheet. */
+  var SCRIPT_URL = "";
+  var FORM_NAME = BRIEF.form;
+
+  /* ---------- helpers ---------- */
+  function $(id) { return document.getElementById(id); }
+  function el(tag, attrs, kids) {
+    var n = document.createElement(tag);
+    if (attrs) for (var k in attrs) {
+      if (k === "text") n.textContent = attrs[k];
+      else if (k === "class") n.className = attrs[k];
+      else if (k.slice(0, 2) === "on") n.addEventListener(k.slice(2), attrs[k]);
+      else if (attrs[k] !== false && attrs[k] != null) n.setAttribute(k, attrs[k]);
+    }
+    (kids || []).forEach(function (c) { if (c) n.appendChild(typeof c === "string" ? document.createTextNode(c) : c); });
+    return n;
+  }
+  function autosize(t) { t.style.height = "auto"; t.style.height = (t.scrollHeight + 2) + "px"; }
+  function toast(msg) {
+    var t = el("div", { class: "toast", role: "status", text: msg });
+    document.body.appendChild(t); setTimeout(function () { t.remove(); }, 2200);
+  }
+  function copyText(text) {
+    var done = function () { toast("Copied"); };
+    try {
+      navigator.clipboard.writeText(text).then(done, function () { fallbackCopy(text); });
+    } catch (e) { fallbackCopy(text); }
+  }
+  function fallbackCopy(text) {
+    var ta = el("textarea", { class: "area", readonly: "readonly", "aria-label": "Your answers" });
+    ta.value = text; ta.style.minHeight = "200px";
+    var box = $("copyBox"); if (box) { box.innerHTML = ""; box.appendChild(el("p", { class: "hint", text: "Copy didn't work here, so the text is selected below. Copy it with your keyboard or long-press." })); box.appendChild(ta); }
+    ta.focus(); ta.select();
+  }
+  // Lines with {email} get the ASAP email dropped in as a selectable span.
+  function withEmail(line) {
+    var parts = line.split("{email}");
+    var kids = [parts[0]];
+    for (var i = 1; i < parts.length; i++) { kids.push(el("span", { class: "email", text: EMAIL })); kids.push(parts[i]); }
+    return kids;
+  }
+
+  /* answer access */
+  function val(id) { return state.a[id]; }
+  function setVal(id, v) { state.a[id] = v; save(); updateNav(); }
+  function rowsOf(step) {
+    var r = val(step.id);
+    if (!Array.isArray(r) || !r.length) { r = []; for (var i = 0; i < step.start; i++) r.push({}); state.a[step.id] = r; }
+    return r;
+  }
+  function filled(step) {
+    var v = val(step.id);
+    if (step.type === "text") return !!(v && String(v).trim());
+    if (step.type === "fields") return !!v && step.fields.some(function (f) { return v[f[0]] && v[f[0]].trim(); });
+    if (step.type === "rows") return Array.isArray(v) && v.some(function (r) { return Object.keys(r).some(function (k) { return r[k] && String(r[k]).trim(); }); });
+    if (step.type === "chips") return !!v && ((v.pick && v.pick.length) || (v.text && v.text.trim()));
+    return true;
+  }
+
+  /* questions that only show for certain picks, e.g. { step: "need", any: ["Website"] } */
+  function active(step) {
+    if (!step.when) return true;
+    var pick = (val(step.when.step) || {}).pick || [];
+    return step.when.any.some(function (o) { return pick.indexOf(o) >= 0; });
+  }
+  function questions() { return STEPS.filter(function (s) { return s.q && active(s); }); }
+  function sections() { var qs = questions(); return SECTION_ORDER.filter(function (sec) { return qs.some(function (q) { return q.sec === sec; }); }); }
+
+  /* ---------- left panel ---------- */
+  (function buildCube() {
+    var shades = ["#262626", "#3a3a3a", "#4f4f4f", "#6a6a6a", "#8a8a8a", "#a9a9a9", "#c6c6c6"];
+    var seed = 7; function rnd() { seed = (seed * 9301 + 49297) % 233280; return seed / 233280; }
+    var cube = $("cube");
+    ["front", "back", "right", "left", "top", "bottom"].forEach(function (f) {
+      var face = el("div", { class: "face f-" + f });
+      for (var i = 0; i < 9; i++) { var s = el("span"); s.style.setProperty("--c", shades[Math.floor(rnd() * shades.length)]); face.appendChild(s); }
+      cube.appendChild(face);
+    });
+  })();
+
+  /* ---------- render ---------- */
+  var navBtn;
+  // Counts change as soon as a pick shows or hides questions, so this runs on every answer too.
+  function counts() {
+    var step = STEPS[state.step];
+    var secs = sections();
+    var si = secs.indexOf(step.sec);
+    $("secNo").textContent = si >= 0 ? String(si + 1).padStart(2, "0") + " / " + String(secs.length).padStart(2, "0") : "";
+    var qs = questions();
+    var qi = qs.indexOf(step);
+    $("counter").textContent = qi >= 0 ? String(qi + 1).padStart(2, "0") + " / " + qs.length : (step.type === "review" ? "Review" : "");
+    var pct = step.type === "intro" ? 0 : qi >= 0 ? (qi / qs.length) * 100 : 100;
+    $("bar").style.width = pct + "%";
+  }
+
+  function render(focus) {
+    var step = STEPS[state.step];
+    $("secTitle").textContent = SECTIONS[step.sec];
+    counts();
+
+    var card = $("card");
+    card.innerHTML = "";
+    card.classList.remove("enter"); void card.offsetWidth; card.classList.add("enter");
+
+    var build = { intro: renderIntro, text: renderText, fields: renderFields, rows: renderRows, chips: renderChips, review: renderReview, done: renderDone }[step.type];
+    build(card, step);
+    if (step.extras) card.appendChild(renderExtras(step));
+    if (step.type !== "done") card.appendChild(renderNav(step));
+    updateNav();
+    document.querySelectorAll("#card .area").forEach(autosize);
+    $("main").scrollTop = 0;
+    if (focus !== false && window.matchMedia("(min-width: 761px)").matches) {
+      var first = card.querySelector(".area, .input, .chip");
+      if (first) setTimeout(function () { try { first.focus({ preventScroll: true }); } catch (e) {} }, 60);
+    }
+    save();
+  }
+
+  function head(card, step) {
+    card.appendChild(el("p", { class: "eyebrow", text: SECTIONS[step.sec] }));
+    card.appendChild(el("h2", { class: "q", id: "q-" + step.id, text: step.q }));
+    if (step.hint) card.appendChild(el("p", { class: "hint", text: step.hint }));
+    if (step.required) card.appendChild(el("p", { class: "must", text: BRIEF.mustText || "We need this one to plan your content" }));
+  }
+
+  function textarea(id, ph, labelledby, getter, setter) {
+    var t = el("textarea", { class: "area", id: id, rows: "2", placeholder: ph || "", "aria-labelledby": labelledby });
+    t.value = getter() || "";
+    t.addEventListener("input", function () { setter(t.value); autosize(t); });
+    t.addEventListener("keydown", function (e) { if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) { e.preventDefault(); next(); } });
+    return t;
+  }
+
+  function renderIntro(card) {
+    card.appendChild(el("p", { class: "eyebrow", text: "Before we start" }));
+    card.appendChild(el("h2", { class: "q", text: BRIEF.intro.title }));
+    card.appendChild(el("div", { class: "copy" }, BRIEF.intro.lines.map(function (l) { return el("p", {}, withEmail(l)); })));
+    var v = val("intro") || {};
+    var grid = el("div", { class: "fields" });
+    BRIEF.intro.fields.forEach(function (f) {
+      var inp = el("input", { class: "input", id: "intro-" + f[0], placeholder: f[2], autocomplete: f[3], type: "text" });
+      inp.value = v[f[0]] || "";
+      inp.addEventListener("input", function () { var o = Object.assign({}, val("intro") || {}); o[f[0]] = inp.value; setVal("intro", o); });
+      inp.addEventListener("keydown", function (e) { if (e.key === "Enter") { e.preventDefault(); next(); } });
+      grid.appendChild(el("div", { class: "field" }, [el("label", { for: "intro-" + f[0], text: f[1] }), inp]));
+    });
+    var trap = el("input", { type: "text", tabindex: "-1", autocomplete: "off", "aria-hidden": "true", style: "position:absolute;left:-9999px;width:1px;height:1px;opacity:0" });
+    trap.addEventListener("input", function () { var o = Object.assign({}, val("intro") || {}); o.website = trap.value; setVal("intro", o); });
+    grid.appendChild(trap);
+    card.appendChild(grid);
+    if (state.submitted) card.appendChild(el("div", { class: "note" }, [el("p", { text: "You've already sent this brief. You can update any answer and send it again." })]));
+  }
+
+  function renderText(card, step) {
+    head(card, step);
+    card.appendChild(textarea("a-" + step.id, step.ph, "q-" + step.id, function () { return val(step.id); }, function (v) { setVal(step.id, v); }));
+  }
+
+  function renderFields(card, step) {
+    head(card, step);
+    var v = val(step.id) || {};
+    var grid = el("div", { class: "fields" });
+    step.fields.forEach(function (f) {
+      var inp = el("input", { class: "input", id: step.id + "-" + f[0], placeholder: f[2], type: "text" });
+      inp.value = v[f[0]] || "";
+      inp.addEventListener("input", function () { var o = Object.assign({}, val(step.id) || {}); o[f[0]] = inp.value; setVal(step.id, o); });
+      inp.addEventListener("keydown", function (e) { if (e.key === "Enter") { e.preventDefault(); next(); } });
+      grid.appendChild(el("div", { class: "field" }, [el("label", { for: step.id + "-" + f[0], text: f[1] }), inp]));
+    });
+    card.appendChild(grid);
+  }
+
+  function renderRows(card, step) {
+    head(card, step);
+    var wrap = el("div", { class: "rows", role: "group", "aria-labelledby": "q-" + step.id });
+    var tmpl = step.cols.map(function (c) { return c[3]; }).join(" ") + " 22px";
+    var hd = el("div", { class: "row head" }, step.cols.map(function (c) { return el("span", { text: c[1] }); }).concat([el("span")]));
+    hd.style.gridTemplateColumns = tmpl;
+    wrap.appendChild(hd);
+    function draw() {
+      wrap.querySelectorAll(".row:not(.head)").forEach(function (n) { n.remove(); });
+      var rows = rowsOf(step);
+      rows.forEach(function (r, ri) {
+        var row = el("div", { class: "row" });
+        row.style.gridTemplateColumns = tmpl;
+        step.cols.forEach(function (c) {
+          var ctl;
+          var aria = c[1] + ", line " + (ri + 1);
+          if (c[4]) {
+            ctl = el("select", { id: step.id + "-" + ri + "-" + c[0], "aria-label": aria });
+            ctl.appendChild(el("option", { value: "", text: "Choose" }));
+            c[4].forEach(function (o) { ctl.appendChild(el("option", { value: o, text: o })); });
+            ctl.value = r[c[0]] || "";
+            ctl.addEventListener("change", function () { rows[ri][c[0]] = ctl.value; setVal(step.id, rows); });
+          } else {
+            ctl = el("input", { class: "input", type: "text", id: step.id + "-" + ri + "-" + c[0], "aria-label": aria, placeholder: ri === 0 ? c[2] : "", inputmode: c[0] === "price" ? "decimal" : null });
+            ctl.value = r[c[0]] || "";
+            ctl.addEventListener("input", function () { rows[ri][c[0]] = ctl.value; setVal(step.id, rows); });
+          }
+          row.appendChild(ctl);
+        });
+        var rm = el("button", { class: "rm", type: "button", "aria-label": "Remove line " + (ri + 1), text: "×", onclick: function () {
+          rows.splice(ri, 1); if (!rows.length) rows.push({}); setVal(step.id, rows); draw();
+        } });
+        row.appendChild(rm);
+        wrap.insertBefore(row, addBtn);
+      });
+    }
+    var addBtn = el("button", { class: "linkbtn addrow", type: "button", text: "+ " + step.add, onclick: function () {
+      var rows = rowsOf(step); rows.push({}); setVal(step.id, rows); draw();
+      var last = wrap.querySelectorAll(".row:not(.head)"); var f = last[last.length - 1].querySelector("input, select"); if (f) f.focus();
+    } });
+    wrap.appendChild(addBtn);
+    draw();
+    card.appendChild(wrap);
+  }
+
+  function renderChips(card, step) {
+    head(card, step);
+    var v = val(step.id) || { pick: [], text: "" };
+    var box = el("div", { class: "chips", role: "group", "aria-labelledby": "q-" + step.id });
+    step.options.forEach(function (o) {
+      var on = v.pick.indexOf(o) >= 0;
+      var b = el("button", { class: "chip", type: "button", "aria-pressed": on ? "true" : "false", text: o, onclick: function () {
+        var cur = Object.assign({ pick: [], text: "" }, val(step.id) || {});
+        var pick = cur.pick.slice();
+        var i = pick.indexOf(o);
+        if (i >= 0) pick.splice(i, 1);
+        else if (!step.multi) pick = [o];
+        else { pick.push(o); if (step.max && pick.length > step.max) pick.shift(); }
+        cur.pick = pick; setVal(step.id, cur);
+        box.querySelectorAll(".chip").forEach(function (c) { c.setAttribute("aria-pressed", pick.indexOf(c.textContent) >= 0 ? "true" : "false"); });
+      } });
+      box.appendChild(b);
+    });
+    card.appendChild(box);
+    if (step.text) {
+      var lab = el("label", { for: "a-" + step.id, id: "l-" + step.id, text: step.text[0] });
+      var t = textarea("a-" + step.id, step.text[1], "l-" + step.id, function () { return (val(step.id) || {}).text; }, function (x) {
+        var cur = Object.assign({ pick: [], text: "" }, val(step.id) || {}); cur.text = x; setVal(step.id, cur);
+      });
+      card.appendChild(el("div", { class: "field" }, [lab, t]));
+    }
+  }
+
+  function renderExtras(step) {
+    var frag = el("div", { class: "field" });
+    var open = !!state.open[step.id] || step.extras.some(function (_, i) { return (val(step.id + ".x" + i) || "").trim(); });
+    var btn = el("button", { class: "more", type: "button", "aria-expanded": open ? "true" : "false", "aria-controls": "x-" + step.id }, [
+      el("span", { class: "plus", text: open ? "−" : "+" }), "Got more to say? Optional"
+    ]);
+    var box = el("div", { class: "extras", id: "x-" + step.id });
+    box.hidden = !open;
+    step.extras.forEach(function (label, i) {
+      var id = step.id + ".x" + i;
+      var lab = el("label", { for: "a-" + id.replace(".", "-"), id: "l-" + id.replace(".", "-"), text: label });
+      var t = textarea("a-" + id.replace(".", "-"), "", "l-" + id.replace(".", "-"), function () { return val(id); }, function (x) { setVal(id, x); });
+      box.appendChild(el("div", { class: "field" }, [lab, t]));
+    });
+    btn.addEventListener("click", function () {
+      var nowOpen = box.hidden; box.hidden = !nowOpen; state.open[step.id] = nowOpen; save();
+      btn.setAttribute("aria-expanded", nowOpen ? "true" : "false");
+      btn.querySelector(".plus").textContent = nowOpen ? "−" : "+";
+      if (nowOpen) { box.querySelectorAll(".area").forEach(autosize); var f = box.querySelector(".area"); if (f) f.focus(); }
+    });
+    frag.appendChild(btn); frag.appendChild(box);
+    return frag;
+  }
+
+  function renderNav(step) {
+    var nav = el("div", { class: "nav" });
+    var left = state.step > 0 ? el("button", { class: "back", type: "button", text: "← Back", onclick: back }) : el("span");
+    var label = step.type === "intro" ? "Start" : step.type === "review" ? "Send to ASAP" : "Next";
+    navBtn = el("button", { class: "btn", type: "button", id: "nextBtn", onclick: next }, [el("span", { text: label }), el("span", { "aria-hidden": "true", text: "→" })]);
+    var right = el("div", { style: "display:flex;align-items:center;gap:16px" }, [
+      step.type === "text" || step.type === "chips" ? el("span", { class: "kbd", text: "Ctrl + Enter" }) : null, navBtn
+    ]);
+    nav.appendChild(left); nav.appendChild(right);
+    return nav;
+  }
+
+  function updateNav() {
+    var step = STEPS[state.step];
+    counts();
+    if (!navBtn) return;
+    var span = navBtn.firstChild;
+    if (step.type === "intro") {
+      var v = val("intro") || {};
+      navBtn.disabled = !((v.name || "").trim() && (v.biz || "").trim());
+    } else if (step.q && step.required) {
+      navBtn.disabled = !filled(step);
+      span.textContent = "Next";
+    } else if (step.q) {
+      span.textContent = filled(step) || hasExtras(step) ? "Next" : "Skip";
+    }
+  }
+  function hasExtras(step) { return (step.extras || []).some(function (_, i) { return (val(step.id + ".x" + i) || "").trim(); }); }
+
+  /* ---------- formatting answers ---------- */
+  function answerText(step) {
+    var v = val(step.id);
+    if (!v) return "";
+    if (step.type === "text") return String(v).trim();
+    if (step.type === "fields") return step.fields.map(function (f) { return v[f[0]] && v[f[0]].trim() ? f[1] + ": " + v[f[0]].trim() : ""; }).filter(Boolean).join("\n");
+    if (step.type === "rows") return v.filter(function (r) { return Object.keys(r).some(function (k) { return r[k] && String(r[k]).trim(); }); })
+      .map(function (r) { return "- " + step.cols.map(function (c) { var x = (r[c[0]] || "").trim(); if (!x) return ""; return c[0] === "price" ? "$" + x.replace(/^\$/, "") : c[5] ? c[5] + " " + x : x; }).filter(Boolean).join(" | "); }).join("\n");
+    if (step.type === "chips") return [v.pick && v.pick.length ? v.pick.join(", ") : "", v.text && v.text.trim() ? step.text[0] + ": " + v.text.trim() : ""].filter(Boolean).join("\n");
+    return "";
+  }
+  function introLabel(key) { var f = BRIEF.intro.fields.filter(function (x) { return x[0] === key; })[0]; return f ? f[1] : key; }
+  function briefText() {
+    var i = val("intro") || {};
+    var out = ["ASAP CLIENT BRIEF: " + FORM_NAME.toUpperCase(), introLabel("biz") + ": " + (i.biz || ""), "Contact: " + (i.name || "") + (i.contact ? " (" + i.contact + ")" : "")];
+    META.forEach(function (m) { out.push(m[0] + ": " + m[1]); });
+    out.push("Sent: " + new Date().toLocaleString("en-AU"), "");
+    sections().forEach(function (sec) {
+      out.push("## " + SECTIONS[sec].toUpperCase());
+      questions().filter(function (q) { return q.sec === sec; }).forEach(function (q) {
+        out.push(q.q); out.push(answerText(q) || "(skipped)");
+        (q.extras || []).forEach(function (label, xi) { var x = (val(q.id + ".x" + xi) || "").trim(); if (x) { out.push(label); out.push(x); } });
+        out.push("");
+      });
+    });
+    return out.join("\n").trim();
+  }
+
+  /* ---------- review & send ---------- */
+  function renderReview(card) {
+    card.appendChild(el("p", { class: "eyebrow", text: "Last step" }));
+    card.appendChild(el("h2", { class: "q", text: "Here's everything. Tap edit to change an answer." }));
+    var list = el("div", { class: "review" });
+    sections().forEach(function (sec) {
+      var s = el("section", { class: "rsec" }, [el("h3", { text: SECTIONS[sec] })]);
+      questions().filter(function (q) { return q.sec === sec; }).forEach(function (q) {
+        var a = answerText(q);
+        var extraCount = (q.extras || []).filter(function (_, xi) { return (val(q.id + ".x" + xi) || "").trim(); }).length;
+        if (extraCount) a += (a ? "\n" : "") + "+ " + extraCount + " extra answer" + (extraCount > 1 ? "s" : "");
+        s.appendChild(el("div", { class: "ritem" }, [
+          el("div", { class: "rq", text: q.q }),
+          el("button", { class: "linkbtn", type: "button", text: "Edit", "aria-label": "Edit: " + q.q, onclick: function () { go(STEPS.indexOf(q)); } }),
+          el("div", { class: "ra" + (a ? "" : " empty"), text: a || (q.required ? "Needed: tap edit to answer" : "Skipped") })
+        ]));
+      });
+      list.appendChild(s);
+    });
+    card.appendChild(list);
+    card.appendChild(el("p", { class: "err", id: "sendErr", hidden: "hidden" }));
+  }
+
+  var lastSend = { ok: false };
+  function payload(text) {
+    var i = val("intro") || {};
+    var fields = META.slice();
+    STEPS.filter(function (s) { return s.q; }).forEach(function (q) {
+      var on = active(q);
+      fields.push([q.q, on ? answerText(q) : ""]);
+      (q.extras || []).forEach(function (label, xi) { fields.push([label, on ? (val(q.id + ".x" + xi) || "").trim() : ""]); });
+    });
+    return { form: FORM_NAME, business: i.biz || "", name: i.name || "", contact: i.contact || "", website: i.website || "", fields: fields, text: text };
+  }
+  function send() {
+    var missing = questions().filter(function (q) { return q.required && !filled(q); })[0];
+    if (missing) { go(STEPS.indexOf(missing)); return; }
+    var btn = $("nextBtn"); if (btn) { btn.disabled = true; btn.firstChild.textContent = "Sending"; }
+    var text = briefText();
+    var finish = function (ok) {
+      lastSend = { ok: ok, text: text };
+      if (ok) state.submitted = new Date().toISOString();
+      go(STEPS.length - 1);
+    };
+    if (!SCRIPT_URL) { finish(false); return; }
+    // Plain-text body keeps this a simple request, so Google accepts it without a pre-check.
+    fetch(SCRIPT_URL, { method: "POST", body: JSON.stringify(payload(text)) })
+      .then(function (r) { return r.json().catch(function () { return { ok: r.ok }; }); })
+      .then(function (res) { finish(!!(res && res.ok)); })
+      .catch(function () { finish(false); });
+  }
+
+  function renderDone(card) {
+    var text = lastSend.text || briefText();
+    var ok = lastSend.ok || (!!state.submitted && !lastSend.text);
+    card.appendChild(el("p", { class: "eyebrow", text: ok ? "Brief received" : "Almost there" }));
+    card.appendChild(el("h2", { class: "q", text: ok ? "Thanks. Your brief is with the ASAP team." : "One last step: send us your answers." }));
+    if (ok) {
+      card.appendChild(el("div", { class: "copy" }, [
+        el("p", { text: BRIEF.doneText || "We'll read through everything and be in touch to book your call. If you think of anything else, just come back to this page and update your answers." })
+      ]));
+    } else {
+      card.appendChild(el("div", { class: "copy" }, [
+        el("p", {}, withEmail("Copy your answers with the button below and paste them into an email to {email}. That's it."))
+      ]));
+    }
+    var acts = el("div", { class: "nav" }, [
+      el("button", { class: "back", type: "button", text: "← Edit answers", onclick: function () { go(STEPS.length - 2); } }),
+      el("button", { class: ok ? "btn ghost" : "btn", type: "button", onclick: function () { copyText(text); } }, [el("span", { text: "Copy my answers" })])
+    ]);
+    card.appendChild(acts);
+    card.appendChild(el("div", { id: "copyBox" }));
+  }
+
+  /* ---------- navigation ---------- */
+  function go(i) { state.step = Math.max(0, Math.min(STEPS.length - 1, i)); render(); }
+  // Steps that don't apply to this client's picks are skipped in both directions.
+  function move(dir) {
+    var i = state.step + dir;
+    while (i > 0 && i < STEPS.length - 1 && !active(STEPS[i])) i += dir;
+    go(i);
+  }
+  function next() {
+    var step = STEPS[state.step];
+    if (step.type === "intro") { var v = val("intro") || {}; if (!((v.name || "").trim() && (v.biz || "").trim())) return; }
+    if (step.required && !filled(step)) return;
+    if (step.type === "review") { send(); return; }
+    move(1);
+  }
+  function back() { move(-1); }
+
+  if (!active(STEPS[state.step])) state.step = 0;
+  render(false);
+})();
+</script>
+
+</body>
+</html>
