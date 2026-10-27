@@ -30,7 +30,7 @@ var BRIEF = {
     rules: "The Rules",
     style: "Filming & Style"
   },
-  order: ["business", "goals", "prices", "team", "customers", "marketing", "different", "rules", "style"],
+  order: ["goals", "business", "prices", "team", "customers", "marketing", "different", "rules", "style"],
   steps: [
     { id: "m0", sec: "business", type: "chips",
       q: "Which package are you starting with?",
@@ -50,7 +50,11 @@ var BRIEF = {
                ["hours", "Opening hours", "e.g. Mon to Sat, 7am to 7pm"]],
       extras: ["Other locations, or plans to open more"] },
 
-    { id: "g1", sec: "goals", type: "text", required: true,
+    { id: "goal", sec: "goals", type: "chips", required: true,
+      q: "What's the main goal here?",
+      hint: "Pick the one that matters most. Your strategy gets built around it.",
+      options: ["More bookings or sales", "Fill quiet times", "Push a service or product", "Launch something new", "Get known locally", "Grow into new areas", "Go more premium", "Hire staff"] },
+    { id: "g1", sec: "goals", type: "text",
       q: "What do you want your marketing to do for you over the next 3 to 12 months?",
       hint: "Be specific if you can: more of a certain service, fill quiet days, hire staff, launch something, open a second site.",
       ph: "e.g. Fill our Tuesday and Wednesday afternoons, and get more people booking pregnancy massage." },

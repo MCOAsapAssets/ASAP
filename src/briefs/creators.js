@@ -30,7 +30,7 @@ var BRIEF = {
     style: "Style & Editing",
     rules: "The Rules"
   },
-  order: ["you", "goals", "audience", "content", "posting", "filming", "style", "rules"],
+  order: ["goals", "you", "audience", "content", "posting", "filming", "style", "rules"],
   steps: [
     { id: "cp", sec: "you", type: "chips",
       q: "Which plan are you on?",
@@ -51,7 +51,11 @@ var BRIEF = {
       start: 2, add: "Add a platform",
       extras: ["Average views on a normal post vs your best post"] },
 
-    { id: "g1", sec: "goals", type: "text", required: true,
+    { id: "goal", sec: "goals", type: "chips", required: true,
+      q: "What's the main goal here?",
+      hint: "Pick the one that matters most. Every concept gets built around it.",
+      options: ["Grow my following", "Land brand deals", "Sell my own product", "Make it my full-time income", "Build a community", "Post consistently"] },
+    { id: "g1", sec: "goals", type: "text",
       q: "What does growth look like for you?",
       hint: "More followers, brand deals, selling your own product, quitting your day job? Be honest. It shapes every concept.",
       ph: "e.g. Get to 20k on TikTok and land my first paid brand deal.",

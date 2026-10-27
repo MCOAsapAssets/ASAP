@@ -30,7 +30,7 @@ var BRIEF = {
     other: "Something Else",
     wrap: "Budget & Timing"
   },
-  order: ["need", "business", "goals", "shoot", "ai", "web", "other", "wrap"],
+  order: ["goals", "need", "business", "shoot", "ai", "web", "other", "wrap"],
   steps: [
     { id: "need", sec: "need", type: "chips", multi: true, required: true,
       q: "What can we help with?",
@@ -47,7 +47,11 @@ var BRIEF = {
       ph: "e.g. We're opening a second clinic in March and our website still looks like 2015.",
       extras: ["Have you worked with an agency or freelancer on this before? How did it go?"] },
 
-    { id: "g1", sec: "goals", type: "text", required: true,
+    { id: "goal", sec: "goals", type: "chips", required: true,
+      q: "What's the main goal here?",
+      hint: "Pick the one that matters most. We'll scope everything around it.",
+      options: ["More enquiries or sales", "Look more professional", "Save time", "Launch something new", "Hire staff", "Train my team"] },
+    { id: "g1", sec: "goals", type: "text",
       q: "What do you want this to achieve?",
       hint: "The result you're after, not just the thing you're buying. More enquiries, less admin, a site that books people in, videos that help you hire.",
       ph: "e.g. Get more people booking online instead of calling, and save reception 5 hours a week." },

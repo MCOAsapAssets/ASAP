@@ -9,7 +9,8 @@
   var SECTIONS = Object.assign({ intro: BRIEF.intro.side || "Your Brief", review: "Check & Send", done: "Thank You" }, BRIEF.sections);
   var SECTION_ORDER = BRIEF.order;
   var STEPS = [{ id: "intro", sec: "intro", type: "intro" }]
-    .concat(BRIEF.steps)
+    .concat(BRIEF.steps.map(function (s, i) { return [BRIEF.order.indexOf(s.sec), i, s]; })
+      .sort(function (a, b) { return a[0] - b[0] || a[1] - b[1]; }).map(function (x) { return x[2]; }))
     .concat([{ id: "review", sec: "review", type: "review" }, { id: "done", sec: "done", type: "done" }]);
   var META = BRIEF.meta || [];
   var EMAIL = "agency@asapassets.com.au";

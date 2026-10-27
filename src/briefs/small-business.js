@@ -29,7 +29,7 @@ var BRIEF = {
     rules: "The Rules",
     style: "Filming & Style"
   },
-  order: ["business", "goals", "prices", "people", "customers", "different", "rules", "style"],
+  order: ["goals", "business", "prices", "people", "customers", "different", "rules", "style"],
   steps: [
     { id: "b1", sec: "business", type: "text",
       q: "What does your business do, in one sentence?",
@@ -44,7 +44,11 @@ var BRIEF = {
                ["book", "How people book or buy", "Website link, phone, walk in"],
                ["hours", "Opening hours", "e.g. Mon to Sat, 7am to 7pm"]] },
 
-    { id: "g1", sec: "goals", type: "text", required: true,
+    { id: "goal", sec: "goals", type: "chips", required: true,
+      q: "What's the main goal here?",
+      hint: "Pick the one that matters most. It's what every concept gets built around.",
+      options: ["More bookings or sales", "Fill quiet times", "Push a service or product", "Launch something new", "Get known locally", "Build trust and reviews", "Hire staff"] },
+    { id: "g1", sec: "goals", type: "text",
       q: "What do you want your videos to do for your business over the next 3 months?",
       hint: "More of a certain booking, fill quiet days, launch something, get known locally. Every concept gets built to move this.",
       ph: "e.g. Fill our Tuesday and Wednesday afternoons, and get more people booking pregnancy massage." },

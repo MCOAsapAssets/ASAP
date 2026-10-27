@@ -20,7 +20,10 @@ const TAIL = "</script>\n\n</body>\n</html>\n";
 
 function load(name, shoot) {
   const code = fs.readFileSync(path.join(ROOT, "src/briefs", name + ".js"), "utf8");
-  return { code, brief: new Function("SHOOT", code + "\nreturn BRIEF;")(shoot) };
+  const brief = new Function("SHOOT", code + "\nreturn BRIEF;")(shoot);
+  // Same ordering as the online brief: questions follow the section order.
+  brief.steps = brief.steps.map((s, i) => [brief.order.indexOf(s.sec), i, s]).sort((a, b) => a[0] - b[0] || a[1] - b[1]).map((x) => x[2]);
+  return { code, brief };
 }
 
 /* ---------- HTML ---------- */
