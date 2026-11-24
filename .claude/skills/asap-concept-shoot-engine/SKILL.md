@@ -11,6 +11,17 @@ Everything in this skill serves one question: what will the person scrolling pas
 
 **Apply all of this silently.** The principles below shape your reasoning. Don't repeat the headings back, don't print your thinking, and never turn them into a checklist, rubric or output format. The only output is the format at the end.
 
+## The gates (read this first, do not skip any)
+
+This skill is long on purpose. Every section is used. A batch is not finished until it has passed all four gates, in order:
+
+1. **Read gate.** Before writing anything, read this whole file, including "How the viewer's mind works" (principles 1-10). Do not start from memory of an earlier run.
+2. **Input gate.** Confirm you have the brand bible, who the customer is, and any direction from the user. Missing a must-have? Ask and stop.
+3. **Viewer gate.** After drafting, do the line-by-line pass in "Gate 3" below and write the gate report. Rewrite or replace any concept that fails.
+4. **Mechanical gate.** Run `scripts/check_batch.py` on the batch file. Fix every FAIL and re-run until it prints PASS.
+
+Never tell the user a batch is done, or deliver it, without both the gate report and a PASS.
+
 ## What you work from
 
 - The client's brand bible. Use it two ways. It is the source of truth for facts (prices, names, services, session lengths, results), voice (how each person talks) and compliance. And its creative strategy section is one creative input among several, a starting point, not the whole answer.
@@ -213,13 +224,40 @@ Post caption: [full caption]
 - Shot lines are clear enough for a videographer who doesn't know the brand.
 - No hashtags unless asked. No extra sections.
 
+## Gate 3: the viewer pass (after drafting, before delivery)
+
+Read each concept from the top as the one customer from principle 1, a line at a time, deciding at every line whether to keep watching. Then write one block per concept in `[CLIENT]_Gate_Report_Batch[N].md`:
+
+```
+C[No] [Concept name]
+Scroll risk: [the exact line most likely to lose them] -> [what you changed, or "held up because..."]
+Delivered at: [second the first useful or surprising thing lands]
+Re-hook at: [second a new loop opens before the first is paid, or "n/a: under 15s"]
+Objection: [the doubt this video provokes] -> [the line that disarms it]
+Facts: [each price/number/name used] -> [brand bible section or "user"]
+Only them: [why a competitor couldn't post this unchanged]
+```
+
+A concept fails Gate 3 if: "Delivered at" is after 10s, a re-hook is missing on a video over 20s, a fact has no source, or "Only them" is weak. Rewrite it or swap in the next-best idea from the longlist, then redo its block. Be honest in this report: it exists so the user can see the thinking was done. Short answers are fine; vague ones aren't.
+
+## Gate 4: the mechanical check
+
+Run:
+
+```
+python3 scripts/check_batch.py [CLIENT]_Concepts_Batch[N]_[Date].md [CLIENT]_Suite_Ledger.md
+```
+
+(Leave out the ledger if there isn't one yet.) It checks the format, that timecodes run on and add up, VO sentence length (average 9 words or fewer), shots held longer than 6s, blanks, hashtags, banned phrases, and repeated hook openings within the batch and against the ledger. Fix every FAIL and re-run until PASS. A WARN is a prompt to look again, not a must-fix. If you can't run code in this environment, do each check by hand and say "Gate 4 checked by hand" in Flags.
+
 ## Delivery
 
-Write two files and send them:
+Write three files and send them:
 
 - `[CLIENT]_Concepts_Batch[N]_[Date].md`: the 10 concepts in the format above, nothing else.
-- `[CLIENT]_Suite_Ledger.md`: one line per concept (person, hook opening words, idea, length), including earlier batches, so the next batch doesn't repeat.
+- `[CLIENT]_Suite_Ledger.md`: a table with one row per concept, including earlier batches, so the next batch doesn't repeat. Keep these columns in this order (the checker reads them): `| Batch | Concept | Person | Hook opening words | Idea | Length |`.
+- `[CLIENT]_Gate_Report_Batch[N].md`: the Gate 3 blocks, then the final line of the Gate 4 output (e.g. `PASS: 10 concepts, 0 fails, 2 warnings`).
 
-In chat: just the files, plus a short "Flags" note only if a fact was missing, a trend needs checking, or you delivered fewer than 10 because you couldn't make 10 good ones. If the user asks to see the longlist first ("show me 30 ideas"), give the one-liners and wait for their picks before writing.
+In chat: just the files, plus a short "Flags" note only if a fact was missing, a trend needs checking, Gate 4 was done by hand, or you delivered fewer than 10 because you couldn't make 10 good ones. If the user asks to see the longlist first ("show me 30 ideas"), give the one-liners and wait for their picks before writing.
 
 When asked to review or tighten an existing script instead, return the rewritten script in the same format, plus at most three one-line notes on the biggest changes.
