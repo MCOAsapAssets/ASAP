@@ -10,7 +10,7 @@ On camera: plain hands only (black or grey sleeves, no rings, watch or tattoos, 
 
 ## 2. Screen recordings (30 minutes, at your desk)
 - Concept 1: your camera roll (real receipts and blurry photos, nothing private), and one planned shot shown on the phone screen.
-- Concept 2: the real editing menu scrolling, a finger tap on one edit, an upload progress bar, and three finished ASAP reels in different edit styles (ASAP's own, no client work).
+- Concept 2: the real editing menu scrolling, a finger tap on one edit, an upload progress bar, and four finished ASAP reels in different edit styles for the cube grid (ASAP's own, no client work).
 - Concept 3: a Notes list titled "Marketing" with the four tasks, ticked off one by one, ending on "All done". Record it in one take.
 
 ## The cube grid (concept 2, edit only, about 30 minutes in DaVinci)
