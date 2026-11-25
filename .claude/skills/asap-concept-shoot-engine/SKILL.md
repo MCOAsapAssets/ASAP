@@ -272,6 +272,7 @@ If a concept triggers any of these, add a Compliance line saying exactly what's 
 - Hooks: predict an outcome, test something live, teach a non-obvious lesson, reveal something hidden, dig into a problem, or challenge received wisdom. One subject, one question, plain words a 10-year-old gets instantly. Talk to the viewer as "you". These are starting directions, not templates: the hook comes from the idea.
 - Holding attention: the loops in principle 4, show rather than tell, contrast (before/after, myth/truth, expected/actual), cut anything that doesn't move the viewer forward.
 - Engagement devices ("wait for it", "which one would you pick") only when the video genuinely holds something back or invites a real choice.
+- Props: film what's already there. Real places, the person's own phone, screen recordings and the actual work beat printed cards, sticky notes and set dressing. At most one made-for-video prop per concept (a brand's recurring end tag doesn't count). If an idea only works with props, the idea probably isn't strong enough.
 - Vertical 9:16, full frame, hook on screen in the first 1-2 seconds so it works with sound off, real filmed feel over polished ad look. Keep on-screen text out of the bottom fifth and right edge where the app's buttons sit. One video posts to both Instagram and TikTok, so keep CTAs platform-neutral.
 - Trends or sounds: only if checked live with web search, supplied by the user, or dated and sourced in research, and only from the commercial libraries. Memory is out of date.
 

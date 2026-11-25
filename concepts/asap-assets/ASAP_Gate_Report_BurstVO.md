@@ -1,4 +1,4 @@
-# Gate Report: ASAP Assets, 3 VO concepts
+# Gate Report: ASAP Assets, 3 VO concepts (v2: no props, new concept 2)
 
 Inputs: ASAP Brand Strategy deck (Nov 2026) and Matt's brief for this run (3 concepts: the phone gap, the editing system, ASAP beyond socials; all VO). VO is now Matt's voice, which answers the deck's open question "can Matt do voiceover?". Still no faces. No prices, so nothing waits on W3.
 
@@ -7,8 +7,18 @@ Inputs: ASAP Brand Strategy deck (Nov 2026) and Matt's brief for this run (3 con
 | | 0-3s: the question it opens | Paid at | New question (re-hook) | Engagement ask |
 |---|---|---|---|---|
 | C1 One of These | "One of these" - what is it? | 3s: it's your phone | 14s: "quicker than you'd think" - how quick? Paid at 17s: "about fifteen minutes" | Send: "the owner whose camera roll is all receipts" |
-| C2 Pick the Job | "What's your next video actually for?" - the viewer has to answer it themselves | 10s: an editing system built around that answer | 14s: "here's what your week looks like" - paid at 17s | Comment SEND, SAVE or BOOK (a real choice, not filler) |
-| C3 The Other List | "It's this" - what's on the desk? | 6s: the list everyone has | 16s: "what does that look like by Friday?" - paid at 19s | Book: hand the list over |
+| C2 The Editing Menu
+Idea in 10 words: The editing menu behind our videos, now open to small businesses.
+Scroll risk: Shot 2 (the off-the-cuff line could ramble) -> keep it to one breath, and shot 3 plays a real finished edit at 7s
+Delivered at: 7s (a real edit from the menu)
+Re-hook at: 15s ("And the part owners love most?", about 56% in), paid at 18s
+Objection: "I wouldn't know what to post" -> "You always know what to film next"
+Facts: CHECK. The menu exists (deck slide 37: Matt's editing menu, made for ASAP and his sister). How small businesses get it, who edits, and the price aren't decided (deck strategy 4). Decide before posting.
+Research: deck slide 9: owners struggle with "not knowing what's working" and with time
+Only them: ASAP's own menu, on screen, with its own reels as proof
+Differs by: product showcase (not a reveal or a relatable list), phone screen and night city, ends on "Pick off the menu"
+
+C3 The Other List | "It's this" - what's on the desk? | 6s: the list everyone has | 16s: "what does that look like by Friday?" - paid at 19s | Book: hand the list over |
 
 VO sentences average under 9 words across all three. Nothing waits for the payoff: every line answers the last one and opens the next.
 
@@ -45,12 +55,13 @@ Research: deck slide 9: owners' top complaint is agencies that "never… followe
 Only them: pillar 3 ("we stay on it") and ASAP working beyond socials, shot in its on-the-go CBD look
 Differs by: relatable chaos to calm (not a reveal or demo), desk then night CBD, Book, ends on "Done"
 
-Batch variety check: three forms (reveal, demo with a choice, chaos to calm), three settings, three jobs (Send, Save, Book), and the storyboard device only once. PASS
+Props: none beyond the phone and the 1-second cube tag; everything else is real places and screen recordings.
+Batch variety check: three forms (reveal, product showcase, chaos to calm), three settings, two jobs (Send, Book), and the storyboard device only once. PASS
 
 Gate 5
 PASS: 3 concepts, 0 fails, 0 warnings
 
 Flags
-- C2: define and price the editing system before posting.
+- C2: decide how small businesses get the menu (package, who edits) and its price before posting.
 - C3: hold until W1 is live.
 - VO: Matt's voice is now in use. Update the deck's open question and the "no voices" rule on slides 5 and 22.

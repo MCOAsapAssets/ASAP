@@ -1,40 +1,35 @@
-# ASAP Assets: Shoot Plan (3 VO concepts)
+# ASAP Assets: Shoot Plan (3 VO concepts, v2: no props)
 
-On camera: plain hands only (black or grey sleeves, no rings, watch or tattoos, no reflections). No faces. VO: Matt, recorded separately.
+Kit: your phone, a second phone for screen recordings, and the cube for the 1-second end tag. Nothing to print or buy.
+On camera: plain hands only (black or grey sleeves, no rings, watch or tattoos, no reflections). No faces. VO: Matt.
 
-## VO recording (20 minutes, first)
-- Record all three scripts in one sitting in a quiet room with soft furnishings, phone 20cm from your mouth, airplane mode on.
-- Talk like you're on a call with one owner. Plain, quick, Australian. Don't read it like an ad.
-- Do 3 takes of each line. Cut the edit to the VO, not the other way round.
+## 1. VO (20 minutes, first)
+- All three scripts in one sitting, in a quiet room with soft furnishings, phone 20cm from your mouth, airplane mode on.
+- Talk like you're on a call with one owner. Three takes of each line.
+- Concept 2, shot 2: say two edits from the menu and what each is for, off the cuff, in one breath. Do a few takes and keep the most natural.
 
-## Session 1: Elwood (one morning, about 1 hour): Concept 1
-- A shop counter (a friend's, or a plain wooden bench at home): phone set face-down, slow push in.
-- Camera roll: screen-record your own roll with real receipts and blurry photos, nothing private showing.
-- Elwood street with the city behind: phone on a fence, then the storyboard frame held up and lowered.
-- Overhead: a pen ticking four frames on a real storyboard page.
-- Cover frame: the phone face-down on the counter.
+## 2. Screen recordings (30 minutes, at your desk)
+- Concept 1: your camera roll (real receipts and blurry photos, nothing private), and one planned shot shown on the phone screen.
+- Concept 2: the real editing menu scrolling, a finger tap on one edit, an upload progress bar, and three finished ASAP reels in different edit styles (ASAP's own, no client work).
+- Concept 3: a Notes list titled "Marketing" with the four tasks, ticked off one by one, ending on "All done". Record it in one take.
 
-## Session 2: Alex's desk, Carlton North (about 45 minutes): Concept 2
-- Print three cards, SEND, SAVE and BOOK, in Playfair Display on paper stock.
-- A DaVinci timeline on the personal monitor, labelled BOOK, built from ASAP's own footage (nothing from work, no client footage).
-- Screen-record footage dropping into the template, and three exports finishing.
-- Cover frame: the three cards with a hand hovering over them.
+## 3. Out and about (one morning plus one night)
+- Elwood morning: phone out of pocket on the street, the beach path shot, and a shopfront filmed at street level (concepts 1 and 2).
+- Carlton North: walking with the phone, plus three quick clips (a doorway, a street sign, a coffee) (concept 1).
+- Parked car: phone on the dashboard with reminders buzzing (concept 3).
+- CBD night: the footbridge with the phone and trams below, and the upload shot (concepts 2 and 3).
+- Cube turn: film it once and reuse it on all three.
 
-## Session 3: desk plus CBD night (about 1 hour): Concept 3
-- Desk at home: cover it in yellow sticky notes with the four tasks clearly readable, plus blanks. Film the clear-up in reverse if that's easier (clear desk first, then add notes, then reverse it in the edit).
-- CBD footbridge at night: a hand sending a message, then pocketing the phone, trams below.
-- Next day: the clear desk with one note that reads "Done".
-- Cover frame: the buried desk.
+## Cover frames
+1. The phone coming out of the pocket. 2. The menu mid-scroll. 3. The long "Marketing" list.
 
 ## The small test
-- What changes: concept 2's ending only. A ends on "Tell me in the comments". B ends on "Book a call" alone. Same footage.
-- Deciding number: comments per reach.
-- With 17 followers, post A first and B as the short cut a week later. Treat the result as a lean, not proof.
+- What changes: concept 2's ending only. A ends on "Pick off the menu" plus "Comment MENU and I'll send you a sample page". B has no comment ask. Only run A if you're happy to DM a menu sample; otherwise skip this test.
+- Deciding number: comments and profile visits per reach. With 17 followers, treat it as a lean, not proof.
 
 ## Sound
-- VO on top, with natural sound underneath: card taps, the pen, sticky notes peeling, trams.
-- Cube click on every ending. No music, or Meta Sound Collection only.
+VO on top, real sound underneath (street, trams, notification buzzes), cube click on every ending. No music, or Meta Sound Collection only.
 
 ## Before posting
-- C2: decide what the editing system includes and what it costs.
-- C3: hold until W1 (the follow-through on the Marketing page) is live.
+- C2: decide how small businesses get the menu (which package, who edits) and its price.
+- C3: hold until W1 is live.

@@ -1,115 +1,115 @@
-Concept 1 - One of These (Matt, 25s)
+Concept 1 - One of These (Matt, 24s)
 
-For the small business owner who thinks good video needs gear, a crew or a budget. It opens on a mystery object, reveals it's the phone in their pocket, then names the real gap: knowing what to film. It sets ASAP up as the people who close that gap.
+For the small business owner who thinks good video needs gear, a crew or a budget. It opens on the phone in their pocket, shows it's already a good camera, and names the real gap: knowing what to film. Everything is shot on a phone, out and about, with no props.
 
-Shot 1 (0-3s): A shop counter in Elwood. A plain hand sets a phone face-down on the wood. Tight, slow push in.
+Shot 1 (0-3s): An Elwood street, morning, handheld. A plain hand pulls a phone out of a jacket pocket.
 VO: "Every small business owner has one of these."
 
-Shot 2 (3-6s): The phone flips. Close on a camera roll: receipts, a blurry shelf, a parking ticket.
+Shot 2 (3-6s): Screen recording: the camera roll scrolling past receipts, a blurry shelf, a parking ticket.
 VO: "Most use it for receipts. And blurry shelf photos."
 
-Shot 3 (6-10s): Same phone, propped on a fence in Elwood, recording a clean, framed shot of the street, the city behind.
+Shot 3 (6-10s): What that same phone records: the Elwood beach path, clean and level, the city behind.
 VO: "That's a camera. We film on the same thing."
 
-Shot 4 (10-14s): A hand holds a storyboard frame up to the street, then lowers it to show the matching shot.
+Shot 4 (10-14s): Close on the phone screen showing one planned shot. Cut to the real spot matching it exactly.
 VO: "The phone was never the problem. Knowing what to film is."
 
-Shot 5 (14-17s): Back at the counter. The hand lays down one printed storyboard page next to the phone.
+Shot 5 (14-17s): Walking down a Carlton North street, phone in hand, the light coming through the trees.
 VO: "And once you know, it's quicker than you'd think."
 
-Shot 6 (17-21s): Overhead: a pen ticks the four frames on the page, one by one. The phone sits beside it.
-VO: "One page. About fifteen minutes. Filming done."
+Shot 6 (17-20s): Three fast phone-shot clips: a doorway, a street sign, a coffee being poured.
+VO: "One plan. About fifteen minutes. Filming done."
 
-Shot 7 (21-23s): Close-up: a hand turns one face of the cube. One click.
-VO: "We write the page. You've got the camera."
+Shot 7 (20-22s): Close-up: a hand turns one face of the cube. One click.
+VO: "We write the plan. You've got the camera."
 
-Shot 8 (23-25s): End card in Playfair Display over the Elwood street shot.
+Shot 8 (22-24s): End card in Playfair Display over the beach path shot.
 VO: "Book a call. Two free concepts, written for you."
 Text: "Two free video concepts, written for your business. Book a call, link in bio."
 
 On-screen hook: Every business owner has one of these.
 Caption line: How to film content for your small business with just your phone
-Post caption: Send this to the owner whose camera roll is all receipts. Your phone is already a good camera. What's missing is knowing what to film and where to stand, and that's the page we write for you. One storyboard page, about 15 minutes of filming. Book a call, link in bio, for two free video concepts written for your business. ASAP Assets, Melbourne.
+Post caption: Send this to the owner whose camera roll is all receipts. Your phone is already a good camera. What's missing is knowing what to film and where to stand, and that's the plan we write for you. About 15 minutes of filming. Book a call, link in bio, for two free video concepts written for your business. ASAP Assets, Melbourne.
 Job: Send - to the business owner friend who says they need a proper camera first
 Pillar: Direction you can shoot
-Where filmed: A shop counter and a street in Elwood
-Short cut: Shots 1, 2, 4 - one of these, the camera roll, the real gap (9s)
+Where filmed: Elwood streets and beach path, a Carlton North street
+Short cut: Shots 1, 2, 4 - one of these, the camera roll, the real gap (10s)
 
-Concept 2 - Pick the Job (Matt, 27s)
+Concept 2 - The Editing Menu (Matt, 27s)
 
-For owners and creators who post a lot and get little back because every video is edited the same way. It asks a question the viewer has to answer for themselves, what's this video for?, then shows an editing system built around that answer. It ends with a real choice to comment on.
+For owners who never know what to post next, or how it should be cut. It shows the real editing menu behind ASAP's own videos and tells small businesses they can now use the same one. The menu is the hero, shown on a phone screen, with no props.
 
-Shot 1 (0-2s): Overhead on a desk in Carlton North: three printed cards, SEND, SAVE and BOOK. A plain hand hovers over them.
-VO: "Quick one. What's your next video actually for?"
+Shot 1 (0-3s): Screen recording on a phone: ASAP's editing menu, scrolling slowly, edit styles one after another.
+VO: "This is the editing menu behind our videos."
 
-Shot 2 (2-6s): The hand taps each card in turn. A paper tap on each.
-VO: "Shared with a mate? Saved for later? Or a booking?"
+Shot 2 (3-7s): The scroll stops. A finger taps one edit on the menu.
+VO: [in your own words: name two edits on the menu and what each one is for, in one breath]
 
-Shot 3 (6-10s): The hand slides BOOK forward. Behind it, on a personal monitor, an editing timeline labelled BOOK.
-VO: "Each one edits differently. The hook, the length, the ending."
+Shot 3 (7-11s): That edit plays full screen: one of ASAP's own finished reels.
+VO: "Now small businesses can use the same menu."
 
-Shot 4 (10-14s): Fresh phone footage drops into the BOOK template and snaps into place, cut by cut.
-VO: "So we build you an editing system around your goal."
+Shot 4 (11-15s): Elwood, handheld: a phone filming a shopfront at street level.
+VO: "Pick an edit. Film it on your phone."
 
-Shot 5 (14-17s): Hold on the timeline as it plays back the finished cut.
-VO: "Then here's what your week looks like."
+Shot 5 (15-18s): Melbourne CBD at night: the phone in a hand, clips uploading, progress bar filling.
+VO: "And the part owners love most?"
 
-Shot 6 (17-22s): Speed-ramped: footage in, three finished reels out, a phone on the desk lighting up three times.
-VO: "You film. You drop it in. The edit's already set up."
+Shot 6 (18-22s): Three different finished edits from the menu, a second or so each, each a clearly different style.
+VO: "You always know what to film next."
 
-Shot 7 (22-25s): The three cards fanned out on the desk. Close-up: a hand turns one face of the cube. One click.
-VO: "So which one's your goal? Tell me in the comments."
-Text: "SEND, SAVE or BOOK? Comment yours."
+Shot 7 (22-24s): Close-up: a hand turns one face of the cube. One click.
+VO: "ASAP Assets. Pick off the menu."
 
-Shot 8 (25-27s): End card in Playfair Display over the three cards.
-VO: "Or book a call. Two free concepts first."
+Shot 8 (24-27s): End card in Playfair Display over the menu screen.
+VO: "Book a call. Two free concepts, written for you."
 Text: "Two free video concepts, written for your business. Book a call, link in bio."
 
-On-screen hook: What's your next video actually for?
-Caption line: Video editing system for small business content
-Post caption: Most videos get edited the same way, whatever they're meant to do. A video you want shared needs a different hook, length and ending to one you want booked. We set up your editing around the job each video has to do, so you film, drop it in and the edit is ready. SEND, SAVE or BOOK: which one's your next video for? Tell us below, or book a call, link in bio, for two free concepts. ASAP Assets, Melbourne.
-Job: Save - kept by owners who want to plan videos by what they're for
+On-screen hook: The editing menu behind our videos.
+Caption line: Video editing ideas for small business: our editing menu
+Post caption: This is the editing menu we built for our own videos, and now small businesses can use it too. Pick an edit, film it on your phone, and you'll never be stuck on what to post next. Book a call, link in bio, and we'll show you the menu with two free video concepts written for your business. ASAP Assets, Melbourne.
+Job: Book - owners who are stuck on what to post book a call to get the menu
 Pillar: More filmed ideas for the money
-Where filmed: Alex's desk in Carlton North (personal monitor, nothing from work)
-Short cut: Shots 1, 3, 4 - the question, the BOOK edit, the system (10s)
+Where filmed: Phone screen recordings, an Elwood shopfront, the CBD at night
+Short cut: Shots 1, 6, 7 - the menu, the range, the end tag (9s)
+Compliance: Before posting, decide how small businesses get the menu (which package, who does the editing) and its price, and make the VO and caption match. The menu on screen must be the real one.
 
-Concept 3 - The Other List (Matt, 26s)
+Concept 3 - The Other List (Matt, 25s)
 
-For the owner whose marketing to-do list never gets shorter: the Google profile, the unanswered enquiry, next year's plan. It's a relatable desk-chaos opener that resolves into calm, and it shows ASAP as an extension of the team that takes the annoying marketing jobs off their hands, beyond social media.
+For the owner whose marketing to-do list never gets shorter. The whole list lives on a phone screen. It resolves from overwhelm to an empty list, and shows ASAP as an extension of the team that takes the annoying marketing jobs off their hands, beyond social media.
 
-Shot 1 (0-2s): Overhead: a desk buried in yellow sticky notes. A plain hand peels one off.
+Shot 1 (0-2s): Screen recording: a Notes list titled "Marketing", scrolling and scrolling.
 VO: "Marketing isn't just posting. It's this."
 
-Shot 2 (2-6s): Close on the notes, one at a time: "Google profile", "Reply to enquiry", "Chase printer", "Plan January".
-VO: "The Google profile. Tuesday's enquiry. The printer. January."
+Shot 2 (2-6s): The scroll slows on four lines: "Update Google profile", "Reply to Tuesday's enquiry", "Order flyers", "Plan January".
+VO: "The Google profile. Tuesday's enquiry. The flyers. January."
 
-Shot 3 (6-10s): A phone on the desk buzzes with reminders. The hand slides it under a pile of notes.
+Shot 3 (6-10s): A phone face-up on a car dashboard, parked, reminders buzzing on the screen.
 VO: "The stuff that sits on your list for months."
 
-Shot 4 (10-13s): The hand starts peeling notes off the desk, one by one, sticking them to its own notebook.
+Shot 4 (10-13s): Screen recording: the list items tick off, one after another.
 VO: "That's the part we take off your hands."
 
-Shot 5 (13-16s): Melbourne CBD at night from a footbridge. A phone in a hand sends a message, city lights behind.
+Shot 5 (13-16s): Melbourne CBD at night from a footbridge. A hand sends a message, city lights behind.
 VO: "Like an extra person on your team."
 
 Shot 6 (16-19s): The footbridge, the phone pocketed, trams passing below.
 VO: "So what does that look like by Friday?"
 
-Shot 7 (19-22s): Back at the desk in daylight. It's clear except one sticky note that reads "Done".
+Shot 7 (19-21s): Screen recording: the Marketing list, empty except one line: "All done".
 VO: "One less list. That's it."
 
-Shot 8 (22-24s): Close-up: a hand turns one face of the cube. One click.
+Shot 8 (21-23s): Close-up: a hand turns one face of the cube. One click.
 VO: "ASAP Assets. We stay on it."
 
-Shot 9 (24-26s): End card in Playfair Display over the clear desk.
+Shot 9 (23-25s): End card in Playfair Display over the night city.
 VO: "Book a call. Two free concepts, written for you."
 Text: "Two free video concepts, written for your business. Book a call, link in bio."
 
 On-screen hook: Marketing isn't just posting.
 Caption line: Marketing help for small business owners in Melbourne
-Post caption: Marketing isn't just posting. It's the Google profile you keep meaning to update, the enquiry from Tuesday and next year's plan. We work like an extra person on your team and take those jobs off your list, not just your socials. Book a call, link in bio, for two free video concepts written for your business. ASAP Assets, Melbourne.
+Post caption: Marketing isn't just posting. It's the Google profile you keep meaning to update, Tuesday's enquiry and next year's plan. We work like an extra person on your team and take those jobs off your list, not just your socials. Book a call, link in bio, for two free video concepts written for your business. ASAP Assets, Melbourne.
 Job: Book - owners drowning in marketing jobs book a call to hand them over
 Pillar: We stay on it
-Where filmed: A desk at home in Elwood and a CBD footbridge at night
-Short cut: Shots 1, 2, 4 - the desk, the list, we take it off you (9s)
+Where filmed: Phone screen recordings, a parked car, a CBD footbridge at night
+Short cut: Shots 1, 2, 4 - the list, the jobs, we take it off you (9s)
 Compliance: Hold until W1 is live (the Marketing page must say what the follow-through includes, which tier, the hours). Every task named here must match that page. Don't say "marketing admin" until it does.
