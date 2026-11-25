@@ -12,6 +12,6 @@
 | 1 | 10 | Matt | The fine print, read slowly | Contract terms in big type | 24 | Book | | | | |
 | 1 | 11 | Matt | Day 1 of 7 | 40 concepts in 7 days | 26 | Book | | | | |
 | 1 | 12 | Matt | What "two free concepts" actually looks like | The free offer, shown | 22 | Book | | | | |
-| 1X | 1 | Matt | No tripod? Here are five | Five everyday things to stand your phone on | 24 | Save | | | | |
-| 1X | 2 | Matt | Most front-door reels look like this | One door filmed three ways | 20 | Send | | | | |
-| 1X | 3 | Matt | Every video on this account | Shot on an iPhone; the storyboard does the work | 21 | Book | | | | |
+| 1X | 1 | Matt | Take 1 | Blooper montage of 46 takes | 20 | Send | | | | |
+| 1X | 2 | Matt | You open at 7 | An owner's day: when is there time to film? | 24 | Send | | | | |
+| 1X | 3 | Practitioner | Can a clinic owner film a reel in a lunch break | Live timed test with a storyboard | 26 | Book | | | | |

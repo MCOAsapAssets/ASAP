@@ -1,53 +1,36 @@
-# ASAP Assets: Shoot Plan (3 extra concepts)
+# ASAP Assets: Shoot Plan (3 extra concepts, v2)
 
-On camera: Matt's hands only, in a plain black or grey sleeve. No rings, watch, tattoos or nails that could identify him, and no reflections in windows, screens or phone glass. No face, no voice (on-screen text does the talking until Matt says yes to voiceover).
-Gear: iPhone 13 and 14 in 4K, natural light. Prop list below. Edit in DaVinci with the deck's look: black and white film grain, Playfair Display, cube-turn ending, natural sound plus Matt's sound effects, captions burnt in.
+On camera: plain hands only, in plain black or grey sleeves. No rings, watch or tattoos, and no reflections in windows or screens. No faces, no voices; on-screen text does the talking. Shot on iPhone 13 and 14 in 4K, natural light. Edit in DaVinci: black and white film grain, Playfair Display, a 1-second cube-turn ending, natural sound plus sound effects.
 
-## Session 1: Elwood (one morning, about 1.5 hours, plus a dusk pickup)
+## Session 1: Elwood and Carlton North (one afternoon, about 1.5 hours): Concept 1, Take 46
+- Film the failures for real where you can (they'll be funnier): the phone toppling off a mug, a hand blurring the lens, the door shutting on the shot, the storage pop-up (screen-record it).
+- Garbage truck: wait for a real one, or use a passing car or tram with loud sound. Don't fake the sound.
+- The clean take 46: soft afternoon light on the Carlton North door. Get 5 good versions.
+- Cover frame: take 1, the phone mid-fall.
 
-Priority: film first. Concept 1 has the most setups, and concept 3's Elwood shots sit alongside it.
+## Session 2: dawn and night pickups (two 30-minute slots): Concept 2, So When, Exactly?
+- Dawn: an unbranded roller shutter going up (a friend's shop, or any shutter with no signage in frame), then lights coming on through a window.
+- Night: the same shopfront's lights going off, streetlight outside.
+- Desk at home: lamp click, blank invoices, a hand on a calculator, a phone reminder that reads "Post something this week" (set it up as a phone reminder, with no app brand showing).
+- Next morning: a printed one-page storyboard sliding under a door (use your own front door).
+- Cover frame: the shutter half-up in blue dawn light.
 
-**At home (table, windowsill, shelf)**
-- Props: a coffee mug, a book, a water bottle and rubber band, a stack of real ASAP storyboard pages (no client names or logos showing), the cube.
-- Concept 1, shots 1-4 and 6-7. For each tripod, film two takes: the hand placing the phone (filmed on the second phone), and the shot the phone records. Shot 7: the top storyboard frame must match what the phone records, so sketch it from the real framing on the day.
-- Cube turn: film 3 versions once and reuse them across all three concepts.
-- Cover frame for concept 1: the hand lifting the phone off the bare table (shot 1).
-
-**Elwood beach path (early morning)**
-- Concept 1, shot 5: the phone on a fence rail, lens through the gap, horizon level, skyline behind. Get it with and without the hand in frame.
-
-**Elwood at dusk (pickup, 20 minutes)**
-- Concept 3, shot 1: the hand holding the older iPhone up against the skyline. Shoot a few takes as the light drops and pick the best.
-- Concept 3, shot 2: screen-record or film the phone playing ASAP's own concept 01 shot (never client work).
-- Cover frame for concept 3: shot 1.
-
-## Session 2: Carlton North (one afternoon, about 1 hour)
-
-**A plain doorway** (no signage, house number or other business in frame; use your own or a friend's door)
-- Concept 2, shots 1-4: the same door opening four ways (eye level, knee height, through street-tree leaves, from inside looking out). Get 3 takes of each so the door swing times the same.
-- Concept 2, shot 5: print a storyboard page with the three angles sketched, hold it up and lower it to the real door.
-- Cover frame for concept 2: shot 2 (knee height, light spilling out).
-
-**A street and a bench**
-- Concept 3, shot 3: the finished street shot, trees moving, for the film grade.
-- Concept 3, shot 4: the storyboard frame of that exact shot held up and lowered to match.
-- Concept 3, shots 5-6: overhead on a bench, flipping storyboard pages loud, stopping on a blank page.
+## Session 3: a clinic lunch break (about 45 minutes): Concept 3, Lunch Break, Timed
+- Who: a practitioner from MMO or Matt's sister's clinic, hands only, with their written yes and the owner's OK (an open question on the deck's "What we need from you" page). Release signed before filming.
+- No patients in the building in shot. No screens, files or names visible.
+- Print one real storyboard page written for that clinic (4 shots).
+- Run a real stopwatch on a second phone, on screen the whole time. Don't edit the time. If it runs over 15 minutes, post the real time anyway; honesty is the point.
+- Cover frame: the stopwatch at 0:00 with a hand about to tap start.
+- Fallback if no clinic says yes in time: run it at your own desk with a storyboard for a demo business, and change the hook to "Can you film a reel in a lunch break?"
 
 ## The small test
-
-- **What changes:** concept 1's hook only. A: "No tripod? Here are five you already own." B: "Five tripods you already own." Same footage.
-- **How:** with 17 followers, Trial Reels isn't available yet (it needs 200+). Post A as the main Reel, then post B as the short cut about a week later.
-- **Deciding number:** 3-second hold in Instagram insights.
-- **Reading it:** at this account size, only a big gap means anything. Treat it as a lean, not proof.
+- What changes: concept 1's opening only. A opens on take 1 (the fall). B opens on take 46 with "This took 46 goes." Same footage.
+- With 17 followers, Trial Reels isn't available (it needs 200+). Post A as the main Reel, then B as the short cut a week later.
+- Deciding number: 3-second hold. Treat it as a lean, not proof, at this account size.
 
 ## Sound notes
+- Real sound everywhere: the clatter, the door, the truck, the shutter, the lamp click, the stopwatch beep.
+- Cube click as a sound effect on every ending. No music, or Meta Sound Collection only.
 
-- Natural sound on every shot: page slaps, the door, wind on the path, keys on the table.
-- Cube click as a sound effect on every ending.
-- No music needed. If you add any, use the Meta Sound Collection or original sound only.
-
-## Where these fit in the calendar
-
-These three are extras alongside the 12 locked Burst 1 Reels (Mon, Wed, Fri from Wed 2 Dec), with no prices and no website dependencies. There are two ways to use them:
-- As a 4th weekly post on a Saturday through December.
-- As the bench: the deck says to hold any price-led post (02, 04, 08, 10) if W3 isn't done on the day. Drop one of these in its place, so the schedule never goes quiet.
+## Where they fit
+These are extras alongside the 12 locked Burst 1 Reels, with no prices and no website dependencies. Use them as a 4th weekly post, or as backups when a price-led post has to be held for the GST fix (W3).

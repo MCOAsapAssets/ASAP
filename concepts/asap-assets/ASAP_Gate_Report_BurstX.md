@@ -1,43 +1,43 @@
-# Gate Report: ASAP Assets, 3 extra concepts
+# Gate Report: ASAP Assets, 3 extra concepts (v2)
 
-Run: ASAP's own account (@asapassetsau, 17 followers). Inputs: ASAP Brand Strategy deck, Nov 2026 (86 slides). Rules applied from the deck: no faces of Matt or Alex, no voices yet, never promise results, prices only once W3 is done (none used here), words-we-never-use list, plain hands only. Ledger checked against Burst 1's 12 locked hooks.
+Inputs: ASAP Brand Strategy deck, Nov 2026. Deck rules applied: no faces of Matt or Alex, no voices yet, never promise results, no prices (so nothing waits on W3), words-we-never-use list. Ledger checked against Burst 1's 12 hooks.
 
-C1 Five Tripods You Already Own
-Idea in 10 words: Five everyday things that hold your phone; the fifth's a storyboard.
-Scroll risk: Shot 4 (tripod 3 is the least surprising) -> kept short at 3s, and the line "Lens clear of the band" adds a usable fix rather than just a name.
-Delivered at: 2s (first tripod and how to use it)
-Re-hook at: 15s ("Number 5 is the one we use on every shoot", about 63% in)
-Objection: "My phone footage will look wonky" -> each tip carries the fix (lens above the rim, level the horizon)
-Facts: storyboards for every shot -> deck slide 21 (signature format) and slide 17 (pillar 1 proof). Elwood, hands-only look -> deck slides 22-23. Two free concepts offer -> deck slide 25.
-Research: deck slide 10, "how much does content creation cost": owners worry about cost and gear, so the "you already own it" angle works
-Only them: ends on ASAP's storyboard stack and the storyboard-to-screen match, which are ASAP's signature format; a generic tips account has no storyboard to show
+Why v1 was replaced: all three were the same video (a filming tip with a storyboard reveal, Pillar 1, hands at a desk). They failed the new variety check.
 
-C2 One Door, Three Ways
-Idea in 10 words: Same door, same phone, three angles; only placement changes it.
-Scroll risk: Shot 1 (a flat doorway is deliberately dull) -> text names it as the bad version in 0-3s, so the dullness is the hook, and shot 2 pays it straight away
-Delivered at: 3s (knee-height fix)
-Re-hook at: n/a: under 20s. Shot 5 still opens a new beat ("We draw every angle") before the end
-Objection: "I'm not a filmmaker" -> each fix is one physical move (kneel, shoot through a tree, turn around)
-Facts: storyboards drawn before filming -> deck slide 21. Carlton North filming -> deck slide 22.
-Research: deck slide 9: owners call agency work "very formulaic"; the flat front-door reel is that formula, shown
-Only them: the payoff is ASAP's storyboard held up to the real door, which no competitor's account shows; the no-faces format is ASAP's own brand rule
+C1 Take 46
+Idea in 10 words: Forty-six failed takes for nine seconds; everyone's take 1 is bad.
+Scroll risk: Shot 5 (fifth failure in a row could drag) -> each fail is 2s and a different kind of disaster, and shot 6 pays off at 10s
+Delivered at: 10s (the clean take and the truth behind it)
+Re-hook at: n/a: 20s. The rising take numbers keep the question "will it ever work?" open from 0s
+Objection: "I'm just bad at filming" -> "Every reel you've liked had a take 1"
+Facts: none beyond ASAP's offer (deck slide 25)
+Research: deck slide 13: owners find marketing "confusing, complex, overwhelming"
+Only them: ASAP's own failed takes, its no-faces look and its "we'll direct you" line. An agency selling polish wouldn't post its failures.
+Differs by: funny (not useful), montage (not a list), takes not tips, Send, ends on a truth line, no storyboard
 
-C3 Filmed On This
-Idea in 10 words: Every ASAP video is shot on an iPhone; storyboards make it.
-Scroll risk: Shot 2 (reading the phone model is low energy) -> trimmed to 3s, and shot 3 opens a direct question ("So why does it look like this?")
-Delivered at: 8s (the reason: the shot was drawn first)
-Re-hook at: 12s ("The page is the part most people skip", about 57% in)
-Objection: "I need a better camera first" -> shots 2-4 answer it head on
-Facts: iPhone 13 and 14 in 4K -> deck slide 22 (filming style). CHECK on the day that every post on the account was shot on those phones, or change shot 1 to "Most videos on this account". Concept 01's Elwood shot is ASAP's own -> deck slide 29.
-Research: deck slide 10: owners ask "do you create content or just post mine"; this shows ASAP creates the plan they film
-Only them: ties the storyboard, ASAP's paid product, to the brand truth "the camera goes back in your hands" (deck slide 14)
+C2 So When, Exactly?
+Idea in 10 words: An owner's whole day, and no gap to film a reel.
+Scroll risk: Shot 3 (desk admin is the least visual beat) -> "Rent's due Friday" makes it personal, and the phone reminder lands at 9s
+Delivered at: 9s (the problem named: you're meant to fit a reel in somewhere)
+Re-hook at: 13s ("So when, exactly?", about 54% in)
+Objection: "An agency will just give me more to do" -> "You film it in about 15 minutes"
+Facts: written to film on a phone in about 15 minutes -> deck slide 17 (pillar 1 proof). "Get your time back" -> deck slide 20 brand phrase. The day is written to "you", not presented as a real person.
+Research: deck slide 9 (owners struggle with time, cost and not knowing what works) and slide 14 (owners "dealing with cost of living, leases, mortgages")
+Only them: the page under the door is ASAP's envelope strategy (deck strategy 1) as a story beat
+Differs by: moving (not funny or useful), a cinematic story, empty streets and rooms not desks, night/dawn look, ends on the page under the door
 
-Batch check
-- Jobs: 1 Save, 1 Send, 1 Book.
-- The batch doesn't feel repetitive: a list, a comparison and a myth-bust.
-- No prices, so none of the three waits on W3. No "follow-through" claims, so none waits on W1.
-- No banned words: "grow your followers", "elevate", "game-changer", "no AI" and "best in Melbourne" don't appear.
-- Followers aren't mentioned anywhere on screen or in the captions (deck rule: never promise results).
+C3 Lunch Break, Timed
+Idea in 10 words: A real practitioner films a reel against a running stopwatch.
+Scroll risk: Shot 4 (the second shot looks like the first) -> the stopwatch keeps climbing on screen, so the race carries it
+Delivered at: 6s (first shot done, clearly easy)
+Re-hook at: 14s ("Two shots left. The coffee's getting cold.", about 54% in)
+Objection: "Filming takes a whole day" -> the real time on screen
+Facts: one storyboard page, four shots -> ASAP's free-concept format (deck slides 17, 61). The time on screen must be real.
+Research: deck slide 11: clinics need content that builds trust without testimonials; slide 16: AHPRA limits
+Only them: an ASAP storyboard in a real clinic, within AHPRA's rules, with a time you can check
+Differs by: suspense test (not a montage or story), a real clinic and a practitioner's hands, Book, ends on the stopwatch
+
+Batch variety check: three feelings (funny, moving, tense), three forms (montage, story, timed test), three settings (home and street, shopfront at dawn and night, clinic), and the storyboard-to-screen device appears only once. PASS
 
 Gate 5
 PASS: 3 concepts, 0 fails, 0 warnings

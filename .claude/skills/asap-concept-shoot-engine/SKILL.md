@@ -190,8 +190,8 @@ Work through this in your head. Don't print any of it.
 
 1. Picture the viewer: the one person from principle 1. Where are they, what's on their mind, what do they already believe about this kind of business, what annoys them, what would surprise them?
 2. Find the tension. Strong content lives where the viewer's assumption meets something they didn't know, didn't expect, or secretly agree with: myths in the industry, things the client does differently, beliefs the owner holds that others would argue with, real moments behind the scenes, the gap between what customers think happens and what actually happens, a price or offer framed to reframe value. Use the customer language from research. This is where the gap (principle 2) comes from.
-3. Go wide first. Generate around 30 rough one-line ideas, each in ten words or less, before choosing any. Your first ideas will be the obvious ones every agency would pitch; push past them. Vary the angle (funny, useful, surprising, emotional, provocative, behind-the-scenes, visual), not to fill a quota but because a wider field gives you better picks.
-4. Pick the strongest using the viewer test. If several strong ideas share a format or length, that's fine. Variety comes from picking good ideas, not forcing a mix. Just avoid the batch feeling repetitive to someone who watches them all in a row.
+3. Go wide first. Generate around 30 rough one-line ideas, each in ten words or less, before choosing any: at least four in each angle (funny, useful, surprising, emotional, provocative, behind-the-scenes, visual). Your first ideas will be the obvious ones every agency would pitch; push past them. Don't let the brand's signature format or main pillar pull every idea into the same shape.
+4. Pick the strongest using the viewer test, then run the variety check. Someone watching the whole batch in a row should never be able to predict the next one. Any two concepts must differ on at least three of: the feeling (funny, surprising, useful, moving, provocative), the form (list, test or challenge, story, reveal, comparison, montage, reaction, exchange), what's on screen, the job, and the ending beat. A brand's signature device (a recurring reveal, transition or format) carries at most a third of the batch; a short brand end tag doesn't count. If two concepts fail, swap one for the best idea from a different angle on the longlist.
 5. Give each concept one job: Send (someone forwards it to a specific person), Save (they keep it to use later), or Book (it moves them to enquire). A healthy burst has all three, weighted to sends at small account sizes, with at least 2 Book concepts that carry a clear next step.
 6. Develop each one. Decide the form the idea needs (a demo, a test, a reveal, a two-person exchange, a slow cinematic piece with VO, a list, a reaction) and the length it needs, no longer. Match the script to the person: someone nervous on camera gets short lines, more speak-freely directions and more B-roll; a confident creator can carry longer single takes. Then write it line by line, and check you haven't slipped into formula mode.
 
@@ -354,9 +354,10 @@ Objection: [the doubt this video provokes] -> [the line that disarms it]
 Facts: [each price/number/name/stat used] -> [brief section, "user", or research source and date]
 Research: [the research insight this came from, or "none"]
 Only them: [why a competitor couldn't post this unchanged]
+Differs by: [how it differs from the others: feeling / form / what's on screen / job / ending]
 ```
 
-A concept fails Gate 4 if: the idea takes more than ten words, "Delivered at" is after 10s, a re-hook is missing on a video over 20s, a fact has no source, it's in formula mode, or "Only them" is weak. Rewrite it or swap in the next-best idea from the longlist, then redo its block. Be honest: this report exists so the user can see the thinking was done. Short answers are fine; vague ones aren't.
+A concept fails Gate 4 if: the idea takes more than ten words, "Delivered at" is after 10s, a re-hook is missing on a video over 20s, a fact has no source, it's in formula mode, "Only them" is weak, or it fails the variety check against another concept. Rewrite it or swap in the next-best idea from the longlist, then redo its block. Be honest: this report exists so the user can see the thinking was done. Short answers are fine; vague ones aren't.
 
 ## Gate 5: the mechanical check
 
