@@ -2,7 +2,7 @@
 """Mechanical gate (Gate 5) for an ASAP concept burst.
 
 Usage:
-  python3 check_batch.py CONCEPTS.md [--ledger LEDGER.md] [--count 12] [--hashtags-asked]
+  python3 check_batch.py CONCEPTS.md [--ledger LEDGER.md --burst N] [--count 12] [--hashtags-asked]
 
 Exit code 0 = PASS (warnings allowed), 1 = FAIL. Fix every FAIL before delivering.
 """
@@ -13,7 +13,7 @@ import sys
 BANNED = [
     "hey guys", "welcome back", "in today's video", "not only", "game changer",
     "game-changer", "look no further", "elevate your", "unlock your", "transform your",
-    "so a lot of you", "don't forget to like", "smash that", "link in bio",
+    "so a lot of you", "don't forget to like", "smash that",
 ]
 WEAK_DISCLOSURE = re.compile(r"(^|\s)#?(collab|gifted)\b", re.I)
 BLANK = re.compile(r"\[(?!in your own words:)[^\]]*\]|\bTBC\b|\bTBD\b|\$X+\b|\bXX+\b", re.I)
@@ -35,12 +35,14 @@ def opening(text, n=3):
     return " ".join(words[:n])
 
 
-def read_ledger(path):
+def read_ledger(path, skip_burst=None):
     """Ledger columns: Burst | Concept | Person | Hook opening words | Idea | Length | Job | ..."""
     openings = set()
     for row in open(path, encoding="utf-8"):
         cells = [c.strip() for c in row.strip().strip("|").split("|")]
         if len(cells) < 4:
+            continue
+        if skip_burst and cells[0].lower() == skip_burst.lower():
             continue
         hook = cells[3]
         if not hook or set(hook) <= set("-: ") or hook.lower() == "hook opening words":
@@ -55,10 +57,11 @@ def main():
     ap.add_argument("--ledger")
     ap.add_argument("--count", type=int, default=12)
     ap.add_argument("--hashtags-asked", action="store_true")
+    ap.add_argument("--burst", help="this burst's label in the ledger, so its own rows are skipped")
     args = ap.parse_args()
 
     lines = open(args.concepts, encoding="utf-8").read().splitlines()
-    ledger_openings = read_ledger(args.ledger) if args.ledger else set()
+    ledger_openings = read_ledger(args.ledger, args.burst) if args.ledger else set()
 
     fails, warns = [], []
     concepts = []

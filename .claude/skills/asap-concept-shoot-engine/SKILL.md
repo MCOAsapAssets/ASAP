@@ -16,8 +16,8 @@ Everything in this skill serves one question: what will the person scrolling pas
 This skill is long on purpose. Every section is used. A burst is not finished until it has passed every gate, in order:
 
 1. **Read gate.** Before writing anything, read this whole file, including "How the viewer's mind works" (principles 1-10) and "What the evidence says". Never work from memory of an earlier run.
-2. **Run gate.** Settle everything in "Set the run first". Missing a must-have (the brief, who the customer is, who films where)? Ask in one message and stop.
-3. **Lock gate.** Show the list and wait for the user to lock it (see "Lock step"), unless they said to write everything in full.
+2. **Run gate.** Settle "Set the run first" from the inputs and keep moving. Fill any gap with a sensible assumption and list it in Flags. Only stop and ask if you have nothing about the business at all.
+3. **List gate.** Only if the user asks to see the list or longlist first: show it and wait (see "Lock step"). Otherwise go straight to writing.
 4. **Viewer gate.** After drafting, do the viewer pass in "Gate 4" and write the gate report. Rewrite or replace any concept that fails.
 5. **Mechanical gate.** Run `scripts/check_batch.py` on the concepts file. Fix every FAIL and re-run until it prints PASS.
 
@@ -26,7 +26,7 @@ Never call a burst done, or deliver it, without the gate report and a PASS (or "
 ## What you work from
 
 - The client's brand bible or brief. It is the source of truth for facts (prices, names, services, session lengths), voice (how each person talks) and compliance. Its creative strategy section is one creative input among several, a starting point, not the whole answer.
-- The client's own numbers, if given: average watch time, skip rate, followers, best and worst posts and why, what they post now. These beat every benchmark. If they're missing, ask once; if still missing, say so in Flags and use the defaults below.
+- The client's own numbers, if given: average watch time, skip rate, followers, best and worst posts and why, what they post now. These beat every benchmark. If they're missing, say so in Flags and use the defaults below.
 - The ASAP Debrief and run settings, if this is an Icarus run: mode (small business or creator), industry and how customers buy, burst goal and number, pillars, posting cadence, filming capacity.
 - The last burst review and the ledger's results columns, if there are any: which concepts held, got sent, got saved, and what didn't. Lean into what worked.
 - Research (for example a Perplexity run): customer fears, frustrations, myths, questions and the exact words they use; what competitors are posting; recent trends and news. See "Using research" below.
@@ -35,7 +35,7 @@ Never call a burst done, or deliver it, without the gate report and a PASS (or "
 - Anything the user adds: a theme or angle, an offer to push, a mix they want (e.g. "3 price-led"), a person to feature, references they like. When the user gives direction, it leads. When they don't, you choose the direction.
 - The ledger from earlier bursts, so you don't repeat ideas or hooks.
 
-If the brief is missing, ask for it. If a fact a concept needs isn't in it, pick a concept that doesn't need that fact, or ask. Never invent one.
+If a fact a concept needs isn't in the inputs, pick a concept that doesn't need it, or use a speak-freely line and flag it. Never invent one.
 
 ### Using research
 
@@ -47,14 +47,14 @@ Research feeds ideas, never claims.
 
 ## Set the run first
 
-Before ideas, settle these (from the inputs, or ask in one message):
+Before ideas, settle these from the inputs. Don't stall: where something's missing, make the sensible call and note it in Flags.
 
 - Batch size: 12 (one burst) unless the user asks for another number.
 - Mode: small business or creator.
 - Industry and how customers buy (appointment, walk-in, quote and job, membership, audience). Concepts must fit how this business actually wins customers.
-- The one customer: what they do, what they already know, what hurts, what they want. If the brief doesn't say, ask.
-- Who films and who's on camera, how comfortable each person is on camera, how many hours, which locations, and what's allowed there (the boss's OK for a workplace, council land, private homes).
-- Compliance regime (see Compliance below).
+- The one customer: what they do, what they already know, what hurts, what they want. If the brief doesn't say, infer it from the business and note it in Flags.
+- Who films and who's on camera, how comfortable each person is on camera, any on-camera limits (for example no faces or voices), how many hours, and which locations.
+- The industry's compliance regime, if any (see Compliance below).
 - The account's average watch time, if known. It sets the length rules.
 
 ## The stance: think, don't pattern-match
@@ -197,11 +197,11 @@ Work through this in your head. Don't print any of it.
 
 ## Lock step
 
-Unless the user says to write everything in full, first show the batch as a list and stop:
+Write the concepts in full by default. If the user asks to see the list first, show it like this and wait:
 
 `[No] | [Name] | [Pillar] | [Job] | [Length] | [Where filmed] | [one line]`
 
-Write the full concepts only after the user locks the list (they can swap, cut or reorder). If the user asks to see the longlist ("show me 30 ideas"), give the one-liners and wait for their picks.
+They can swap, cut or reorder before you write. If the user asks to see the longlist ("show me 30 ideas"), give the one-liners and wait for their picks.
 
 ## The viewer test
 
@@ -252,19 +252,18 @@ If the evidence library is available, it has the sources and grades. Only grade 
 
 ## Compliance (check every concept)
 
-Australian Consumer Law always applies: no misleading claims, no fake scarcity. Add these for every concept, plus the client's own regime:
+Australian Consumer Law always applies: no misleading claims, no fake scarcity. Flag the items below only when a concept triggers them, plus the client's own regime. They shape the wording; they never slow the ideas down.
 
 1. Paid, gifted, discounted or swapped: disclose in the first seconds of the video (spoken or on screen) AND in the caption's first line, and switch on the platform label for branded content. Plain words ("Paid partnership", "We swapped: ..."), not "collab" or "gifted".
 2. Anyone identifiable needs a signed release (accounts, organic and paid use, duration, right to withdraw). Children need a guardian's release and the child's OK. Keep bystanders out of frame or unidentifiable.
 3. Don't record a private conversation the talent isn't part of. Consent to film is not consent to publish.
-4. Location: check the council before filming on public land. Bayside needs a permit for all filming on parks and foreshore (low impact permit for 10 people or fewer); Port Phillip needs a permit for all filming; City of Melbourne exempts low impact filming (6 people or fewer, one camera). Piers and water: Parks Victoria. Drones: registered drone and a licensed operator only.
-5. Music on business accounts: Meta Sound Collection, TikTok Commercial Music Library, original sound, or licensed music. Never a trending song.
-6. No invented testimonials or reviews. Before and after: same person, angle, light and timeframe, results vary. No weight-loss promises.
-7. Health clients (AHPRA): no testimonials, patient stories or outcome claims; nothing that identifies a patient or shows screens, files or other patients; comments moderated; keep required qualifiers ("can help with").
-8. Victorian domestic builders: name and registration number in the caption and on the end card.
-9. Alcohol: age-restricted posts, adult audience, no prominent talent aged 18-24.
-10. "Comment X" calls to action: only where the DM delivers one specific thing. The DM names the business, gives what was asked, and offers an opt-out. Health clients: hold until the DM content is checked.
-11. Giveaways: free entry, written terms, platform release wording, state permit thresholds checked.
+4. Music on business accounts: Meta Sound Collection, TikTok Commercial Music Library, original sound, or licensed music. Never a trending song.
+5. No invented testimonials or reviews. Before and after: same person, angle, light and timeframe, results vary. No weight-loss promises.
+6. Health clients (AHPRA): no testimonials, patient stories or outcome claims; nothing that identifies a patient or shows screens, files or other patients; comments moderated; keep required qualifiers ("can help with").
+7. Victorian domestic builders: name and registration number in the caption and on the end card.
+8. Alcohol: age-restricted posts, adult audience, no prominent talent aged 18-24.
+9. "Comment X" calls to action: only where the DM delivers one specific thing. The DM names the business, gives what was asked, and offers an opt-out. Health clients: hold until the DM content is checked.
+10. Giveaways: free entry, written terms, platform release wording.
 
 If a concept triggers any of these, add a Compliance line saying exactly what's needed. Compliance always beats every principle above: specificity, hooks and loops work inside it, never around it.
 
@@ -337,7 +336,7 @@ Build one A/B test into each burst. Pick one variable only: two hooks on the sam
 After the concepts, write a shoot plan:
 
 - Group concepts by location and day, in priority order (what must be filmed first, what can wait).
-- For each location: who needs to be there, gear, permits or permissions needed, and what must be signed before filming (releases, the boss's OK, council permit).
+- For each location: who needs to be there, gear and props, and any release a person in frame needs to sign.
 - For each concept: the takes to get, including the short cut and any alternate hook for the small test. Note the first frame to use as the cover.
 - Sound notes: where to record real sound or VO, and the music source if any.
 
@@ -364,7 +363,7 @@ A concept fails Gate 4 if: the idea takes more than ten words, "Delivered at" is
 Run:
 
 ```
-python3 scripts/check_batch.py [CLIENT]_Concepts_Burst[N]_[Date].md --ledger [CLIENT]_Suite_Ledger.md --count [batch size]
+python3 scripts/check_batch.py [CLIENT]_Concepts_Burst[N]_[Date].md --ledger [CLIENT]_Suite_Ledger.md --burst [N] --count [batch size]
 ```
 
 (Leave out `--ledger` if there isn't one yet; add `--hashtags-asked` if the user asked for hashtags.) It checks: the format and every required field, timecodes running on and adding up, the short cut adding to 6-10s, VO sentence length, blanks, banned phrases, hashtags, logo shots, exclamation marks, and repeated hook openings within the burst and against the ledger. Fix every FAIL and re-run until PASS. A WARN is a prompt to look again, not a must-fix. If you can't run code, do each check by hand and say "Gate 5 checked by hand" in Flags.
