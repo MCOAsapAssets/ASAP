@@ -13,6 +13,12 @@ On camera: plain hands only (black or grey sleeves, no rings, watch or tattoos, 
 - Concept 2: the real editing menu scrolling, a finger tap on one edit, an upload progress bar, and three finished ASAP reels in different edit styles (ASAP's own, no client work).
 - Concept 3: a Notes list titled "Marketing" with the four tasks, ticked off one by one, ending on "All done". Record it in one take.
 
+## The cube grid (concept 2, edit only, about 30 minutes in DaVinci)
+- Build once as a template: a 2x2 grid, thin black gaps between squares like a cube face, on film black (#0E0E0E).
+- Four ASAP edits drop in one at a time, about 1 second apart, each still playing. Each square gets one word in Playfair Display on paper (#F3F0E8): Monday. Wednesday. Friday. Next week: already picked.
+- End: the grid snaps tight, rotates like a cube face turning, and match-cuts to the real cube in the hand finishing the turn.
+- Reuse: change the four clips and four words for any future story. Use it in about 1 in 3 concepts so it stays special.
+
 ## 3. Out and about (one morning plus one night)
 - Elwood morning: phone out of pocket on the street, the beach path shot, and a shopfront filmed at street level (concepts 1 and 2).
 - Carlton North: walking with the phone, plus three quick clips (a doorway, a street sign, a coffee) (concept 1).

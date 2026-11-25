@@ -54,10 +54,10 @@ VO: "Pick an edit. Film it on your phone."
 Shot 5 (15-18s): Melbourne CBD at night: the phone in a hand, clips uploading, progress bar filling.
 VO: "And the part owners love most?"
 
-Shot 6 (18-22s): Three different finished edits from the menu, a second or so each, each a clearly different style.
+Shot 6 (18-22s): The cube grid. Four finished edits from the menu drop in one by one, filling a 2x2 grid like one face of the cube, each square playing. A word lands over each square as it arrives, telling the week: "Monday." "Wednesday." "Friday." "Next week: already picked."
 VO: "You always know what to film next."
 
-Shot 7 (22-24s): Close-up: a hand turns one face of the cube. One click.
+Shot 7 (22-24s): The grid snaps tight and turns like a cube face, straight into the real cube. A hand finishes the turn. One click.
 VO: "ASAP Assets. Pick off the menu."
 
 Shot 8 (24-27s): End card in Playfair Display over the menu screen.
@@ -70,7 +70,7 @@ Post caption: This is the editing menu we built for our own videos, and now smal
 Job: Book - owners who are stuck on what to post book a call to get the menu
 Pillar: More filmed ideas for the money
 Where filmed: Phone screen recordings, an Elwood shopfront, the CBD at night
-Short cut: Shots 1, 6, 7 - the menu, the range, the end tag (9s)
+Short cut: Shots 1, 6, 7 - the menu, the cube grid, the turn (9s)
 Compliance: Before posting, decide how small businesses get the menu (which package, who does the editing) and its price, and make the VO and caption match. The menu on screen must be the real one.
 
 Concept 3 - The Other List (Matt, 25s)

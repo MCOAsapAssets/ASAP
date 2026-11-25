@@ -34,7 +34,7 @@ Objection: "I wouldn't know what to post" -> "You always know what to film next"
 Facts: CHECK. The menu exists (deck slide 37: Matt's editing menu, made for ASAP and his sister). How small businesses get it, who edits, and the price aren't decided (deck strategy 4). Decide before posting.
 Research: deck slide 9: owners struggle with "not knowing what's working" and with time
 Only them: ASAP's own menu, on screen, with its own reels as proof
-Differs by: product showcase, phone screen and night city, ends on "Pick off the menu"
+Differs by: product showcase, phone screen and night city, ends on the cube grid turning into the cube (the only concept using the grid)
 
 C3 The Other List
 Idea in 10 words: The marketing jobs that sit on your list; we take them.
