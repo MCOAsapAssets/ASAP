@@ -9,7 +9,7 @@ Props: none beyond the phone and the 1-second cube tag. Everything else is real 
 | | 0-3s: the question it opens | Paid at | New question (re-hook) | Engagement ask |
 |---|---|---|---|---|
 | C1 One of These | "One of these" - what is it? | 3s: it's your phone | 14s: "quicker than you'd think" - how quick? Paid at 17s: "about fifteen minutes" | Send: "the owner whose camera roll is all receipts" |
-| C2 The Editing Menu | "The editing menu behind our videos" - what's on it? | 7s: a real finished edit from the menu | 15s: "the part owners love most?" - paid at 18s | Book; optional "Comment MENU" test |
+| C2 The Editing Menu | "The editing menu behind our videos" - what's on it? | 4.6s: the cube flash shows four real edits and the whole process | 15s: "the part owners love most?" - paid at 18s | Book; optional "Comment MENU" test |
 | C3 The Other List | "It's this" - what's on the list? | 6s: the jobs everyone has | 16s: "what does that look like by Friday?" - paid at 19s | Book: hand the list over |
 
 VO sentences average under 9 words across all three. Every line answers the last one and opens the next.
@@ -27,14 +27,14 @@ Differs by: reveal, out on Elwood and Carlton North streets, the planned-shot-to
 
 C2 The Editing Menu
 Idea in 10 words: The editing menu behind our videos, now open to small businesses.
-Scroll risk: Shot 2 (the off-the-cuff line could ramble) -> keep it to one breath, and shot 3 plays a real finished edit at 7s
-Delivered at: 7s (a real edit from the menu)
+Scroll risk: Shot 1 (a scrolling menu is slow) -> the cube flash hits at 3s with four cuts in 1.6 seconds, before anyone thinks about scrolling
+Delivered at: 4.6s (four real edits and the whole process: pick, film, cut, post)
 Re-hook at: 15s ("And the part owners love most?", about 56% in), paid at 18s
 Objection: "I wouldn't know what to post" -> "You always know what to film next"
 Facts: CHECK. The menu exists (deck slide 37: Matt's editing menu, made for ASAP and his sister). How small businesses get it, who edits, and the price aren't decided (deck strategy 4). Decide before posting.
 Research: deck slide 9: owners struggle with "not knowing what's working" and with time
 Only them: ASAP's own menu, on screen, with its own reels as proof
-Differs by: product showcase, phone screen and night city, ends on the cube grid turning into the cube (the only concept using the grid)
+Differs by: product showcase, phone screen and night city, the cube flash at 3s tells the whole story in 1.6 seconds (the only concept using it)
 
 C3 The Other List
 Idea in 10 words: The marketing jobs that sit on your list; we take them.

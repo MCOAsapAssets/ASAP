@@ -6,18 +6,19 @@ On camera: plain hands only (black or grey sleeves, no rings, watch or tattoos, 
 ## 1. VO (20 minutes, first)
 - All three scripts in one sitting, in a quiet room with soft furnishings, phone 20cm from your mouth, airplane mode on.
 - Talk like you're on a call with one owner. Three takes of each line.
-- Concept 2, shot 2: say two edits from the menu and what each is for, off the cuff, in one breath. Do a few takes and keep the most natural.
+- Concept 2, shot 2: "Pick it. Film it. Cut it. Post it." Say it on a steady beat, one word every 0.4 seconds, so it lands on the cuts.
 
 ## 2. Screen recordings (30 minutes, at your desk)
 - Concept 1: your camera roll (real receipts and blurry photos, nothing private), and one planned shot shown on the phone screen.
-- Concept 2: the real editing menu scrolling, a finger tap on one edit, an upload progress bar, and four finished ASAP reels in different edit styles for the cube grid (ASAP's own, no client work).
+- Concept 2: the real editing menu scrolling, a finger tap on one edit, an upload progress bar, and four finished ASAP reels in different edit styles for the cube flash (ASAP's own, no client work).
 - Concept 3: a Notes list titled "Marketing" with the four tasks, ticked off one by one, ending on "All done". Record it in one take.
 
-## The cube grid (concept 2, edit only, about 30 minutes in DaVinci)
+## The cube flash (concept 2, shot 2: edit only, about 30 minutes in DaVinci)
 - Build once as a template: a 2x2 grid, thin black gaps between squares like a cube face, on film black (#0E0E0E).
-- Four ASAP edits drop in one at a time, about 1 second apart, each still playing. Each square gets one word in Playfair Display on paper (#F3F0E8): Monday. Wednesday. Friday. Next week: already picked.
-- End: the grid snaps tight, rotates like a cube face turning, and match-cuts to the real cube in the hand finishing the turn.
-- Reuse: change the four clips and four words for any future story. Use it in about 1 in 3 concepts so it stays special.
+- Four ASAP edits snap in one at a time, 0.4 seconds apart (12 frames at 30fps): top left, top right, bottom left, bottom right. Each one keeps playing once it lands.
+- One word lands with each square, in Playfair Display on paper (#F3F0E8): Pick. Film. Cut. Post. Cut the VO so each word is said as its square snaps in. Add a soft click on each snap.
+- Hold the full grid, all four playing, for about 2.4 seconds.
+- Reuse: change the four clips and four words to tell any story in under 2 seconds. Use it in about 1 in 3 concepts so it stays special.
 
 ## 3. Out and about (one morning plus one night)
 - Elwood morning: phone out of pocket on the street, the beach path shot, and a shopfront filmed at street level (concepts 1 and 2).
