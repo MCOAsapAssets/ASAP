@@ -16,7 +16,7 @@ Everything in this skill serves one question: what will the person scrolling pas
 This skill is long on purpose. Every section is used. A burst is not finished until it has passed every gate, in order:
 
 1. **Read gate.** Before writing anything, read this whole file, including "How the viewer's mind works" (principles 1-10) and "What the evidence says". Never work from memory of an earlier run.
-2. **Run gate.** Settle "Set the run first" from the inputs and keep moving. Fill any gap with a sensible assumption and list it in Flags. Only stop and ask if you have nothing about the business at all.
+2. **Gauge gate.** Before thinking of a single idea, ask the questions in "Gauge the run first" in one message, and wait for the answers. Skip any question the inputs or the request already answer. If the user says "just go", use the defaults and list them in Flags.
 3. **List gate.** Only if the user asks to see the list or longlist first: show it and wait (see "Lock step"). Otherwise go straight to writing.
 4. **Viewer gate.** After drafting, do the viewer pass in "Gate 4" and write the gate report. Rewrite or replace any concept that fails.
 5. **Mechanical gate.** Run `scripts/check_batch.py` on the concepts file. Fix every FAIL and re-run until it prints PASS.
@@ -45,9 +45,22 @@ Research feeds ideas, never claims.
 - An industry statistic can appear in a script only with a named source, recorded in the gate report. No source, no stat.
 - Prices, results and claims about the client still come only from the brief or the user, never from research.
 
-## Set the run first
+## Gauge the run first
 
-Before ideas, settle these from the inputs. Don't stall: where something's missing, make the sensible call and note it in Flags.
+The brief says what the business is. Only the user can say what they want from this batch, and that changes every idea. So ask first: one message, numbered, each question with short options and your recommended default, so they can answer in a few words. Ask only what the inputs and request don't already answer, and never more than six:
+
+1. **What's this batch for?** More reach and followers / trust / bookings or calls / a launch or offer. And how many concepts?
+2. **Who's on camera, and how?** Owner on camera / hands only, no faces / voiceover / on-screen text only / a creator or staff member.
+3. **What should it feel like?** Pick two: funny, moving, useful, surprising, provocative, cinematic, raw and on-the-go.
+4. **Any angles, topics or offers it must cover?** If the user has their own ideas, they lead, and you build each into a full concept.
+5. **A reel you love, and one you can't stand, and why?** A quick breakdown or screenshots; a link alone can't be watched. File any answer in the reference library.
+6. **Anything off-limits?** People, places, words, claims, looks.
+
+Then stop and wait. Don't ask about permits, releases or admin here; those go in Flags at the end. After the answers, the user's words outrank the brief, the evidence and your own taste: if they asked for something, it's in the batch.
+
+## Then settle the rest from the inputs
+
+Don't stall on these: where something's missing, make the sensible call and note it in Flags.
 
 - Batch size: 12 (one burst) unless the user asks for another number.
 - Mode: small business or creator.
